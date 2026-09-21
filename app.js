@@ -269,9 +269,10 @@
     // 2. Update Ticker HUD
     tickerText.textContent = `★ ${movie.title.toUpperCase()} (${movie.year}) ★`;
 
-    // 3. Update SEO Title & Structured Data
-    const fullTitle = `${movie.title} (${movie.year}) — Spaghetti Western Discovery`;
+    // 3. Update SEO Title, Meta Tags & Structured Data
+    const fullTitle = `${movie.title} (${movie.year}) - Spaghetti Western Discovery`;
     document.title = fullTitle;
+    updateDynamicMetaTags(movie);
     updateStructuredData(movie);
 
     // 4. Update URL without page reload
@@ -284,28 +285,70 @@
     addToRecentHistory(movie);
   }
 
+  // --- Dynamic Meta Tags Engine for SEO ---
+  function updateDynamicMetaTags(movie) {
+    const rawSynopsis = movie.synopsis || 'Discover Spaghetti Westerns from the 1960s and 70s.';
+    const shortDesc = rawSynopsis.length > 155 ? rawSynopsis.substring(0, 152) + '...' : rawSynopsis;
+    const filmUrl = `https://spaghetti-westerns.softcoverbooks.co.za/?film=${encodeURIComponent(movie.slug)}`;
+    const fullTitle = `${movie.title} (${movie.year}) - Spaghetti Western Discovery`;
+
+    // Standard Meta Description
+    const metaDesc = document.getElementById('meta-desc');
+    if (metaDesc) metaDesc.setAttribute('content', shortDesc);
+
+    // Canonical Link
+    const metaCanonical = document.getElementById('meta-canonical');
+    if (metaCanonical) metaCanonical.setAttribute('href', filmUrl);
+
+    // Open Graph Tags
+    const ogTitle = document.getElementById('og-title');
+    if (ogTitle) ogTitle.setAttribute('content', fullTitle);
+
+    const ogDesc = document.getElementById('og-desc');
+    if (ogDesc) ogDesc.setAttribute('content', shortDesc);
+
+    const ogUrl = document.getElementById('og-url');
+    if (ogUrl) ogUrl.setAttribute('content', filmUrl);
+
+    // Twitter Card Tags
+    const twTitle = document.getElementById('tw-title');
+    if (twTitle) twTitle.setAttribute('content', fullTitle);
+
+    const twDesc = document.getElementById('tw-desc');
+    if (twDesc) twDesc.setAttribute('content', shortDesc);
+  }
+
   // --- Dynamic Schema.org Structured Data ---
   function updateStructuredData(movie) {
-    const scriptTag = document.getElementById('schema-jsonld');
+    const scriptTag = document.getElementById('movie-schema');
     if (!scriptTag) return;
+
+    const actors = [];
+    if (movie.lead_actor) {
+      actors.push({ "@type": "Person", "name": movie.lead_actor });
+    }
+    if (movie.co_stars && Array.isArray(movie.co_stars)) {
+      movie.co_stars.slice(0, 3).forEach(actor => {
+        actors.push({ "@type": "Person", "name": actor.trim() });
+      });
+    }
 
     const movieSchema = {
       "@context": "https://schema.org",
       "@type": "Movie",
       "name": movie.title,
-      "datePublished": movie.year,
-      "description": movie.synopsis,
-      "genre": ["Spaghetti Western", "Western", "Cult Cinema"],
+      "dateCreated": movie.year,
       "director": {
         "@type": "Person",
-        "name": movie.director
+        "name": movie.director || "Unknown Director"
       },
-      "actor": [
-        {
-          "@type": "Person",
-          "name": movie.lead_actor
-        }
-      ],
+      "actor": actors.length ? actors : [{ "@type": "Person", "name": "Ensemble Cast" }],
+      "musicBy": {
+        "@type": "Person",
+        "name": movie.music || "Archival Score"
+      },
+      "description": movie.synopsis,
+      "genre": ["Spaghetti Western", "Euro-Western", "Cult Cinema", "Action"],
       "url": `https://spaghetti-westerns.softcoverbooks.co.za/?film=${movie.slug}`
     };
 
