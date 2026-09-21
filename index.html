@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spaghetti Western Discovery — 560+ Cult Euro-Westerns</title>
+  <meta name="description" content="Discover 560+ cult Spaghetti Westerns with our instant randomizer slot machine. Unearth rare Italian and European frontier cinema gems from the 1960s and 70s.">
+  <meta name="keywords" content="Spaghetti Western, Italian Western, Sergio Leone, Ennio Morricone, Franco Nero, Giuliano Gemma, Euro Westerns, Cult Cinema, Film Discovery">
+  <meta name="theme-color" content="#1a1412">
+  <link rel="canonical" href="https://spaghetti.westerns.softcoverbooks.co.za/">
+
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://spaghetti.westerns.softcoverbooks.co.za/">
+  <meta property="og:title" content="Spaghetti Western Discovery — 560+ Cult Euro-Westerns">
+  <meta property="og:description" content="Unearth 560+ Cult European Westerns — One Click at a Time. Instant discovery slot machine for 1960s and 70s Italian frontier cinema.">
+  <meta property="og:image" content="https://spaghetti.westerns.softcoverbooks.co.za/1.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spaghetti Western Discovery — 560+ Cult Euro-Westerns">
+  <meta name="twitter:description" content="Unearth 560+ Cult European Westerns — One Click at a Time. Instant discovery slot machine for 1960s and 70s Italian frontier cinema.">
+  <meta name="twitter:image" content="https://spaghetti.westerns.softcoverbooks.co.za/1.jpg">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Lora:ital,wght@0,400;0,600;1,400&family=Rye&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json" id="schema-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Spaghetti Western Discovery",
+    "url": "https://spaghetti.westerns.softcoverbooks.co.za/",
+    "description": "Random film discovery engine for 560+ Italian and European Spaghetti Westerns.",
+    "applicationCategory": "EntertainmentApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+</head>
+<body>
+  <div class="dust-overlay" aria-hidden="true"></div>
+
+  <!-- Header Container -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-badge">
+        <span class="badge-star">★</span>
+        <span class="badge-text">EST. 1960s CINEMA VAULT</span>
+        <span class="badge-star">★</span>
+      </div>
+      <h1 class="site-title">
+        <span class="title-sub">THE DEFINITIVE</span>
+        <span class="title-main">SPAGHETTI WESTERN</span>
+        <span class="title-accent">DISCOVERY ENGINE</span>
+      </h1>
+      <p class="site-tagline">Unearth 560+ Cult European Westerns — One Click at a Time</p>
+      
+      <div class="header-controls">
+        <span class="vault-counter" id="vault-count-badge">📦 560 Films in Vault</span>
+        <button type="button" class="sound-toggle-btn" id="sound-btn" aria-label="Toggle sound effects">
+          <span id="sound-icon">🔊</span> <span id="sound-text">Sound: On</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Top Ad Slot (CLS Protected) -->
+  <div class="ad-slot-container" id="ad-top-container">
+    <div class="ad-placeholder" id="ad-top-slot" aria-label="Advertisement Banner">
+      <span class="ad-label">ADVERTISEMENT</span>
+      <!-- Google AdSense code can be placed here -->
+    </div>
+  </div>
+
+  <main class="main-content" id="main-app">
+    <!-- Centerpiece Draw Machine -->
+    <section class="draw-centerpiece" aria-labelledby="draw-heading">
+      <h2 id="draw-heading" class="sr-only">Draw a Random Spaghetti Western</h2>
+
+      <div class="slot-machine-hud">
+        <div class="hud-ticker-window" id="hud-ticker">
+          <div class="ticker-content" id="ticker-text">READY FOR YOUR NEXT DRAW</div>
+        </div>
+      </div>
+
+      <div class="button-stage">
+        <button type="button" class="btn-surprise-me" id="draw-btn" aria-label="Draw a random spaghetti western film">
+          <span class="btn-glow" aria-hidden="true"></span>
+          <span class="btn-inner">
+            <span class="btn-icon">🔴</span>
+            <span class="btn-text">SURPRISE ME</span>
+          </span>
+          <span class="btn-subtext">Press SPACE or Click to Draw</span>
+        </button>
+      </div>
+
+      <!-- Filter Pills -->
+      <div class="filters-container" role="radiogroup" aria-label="Discovery Filters">
+        <span class="filters-label">SELECT VAULT FILTER:</span>
+        <div class="filter-pills">
+          <button type="button" class="filter-pill active" data-filter="all" role="radio" aria-checked="true">
+            <span class="pill-icon">🎲</span> All Surprises (<span id="count-all">560</span>)
+          </button>
+          <button type="button" class="filter-pill" data-filter="cult_icons" role="radio" aria-checked="false">
+            <span class="pill-icon">⭐</span> Cult Legends (<span id="count-cult">210</span>)
+          </button>
+          <button type="button" class="filter-pill" data-filter="golden_era" role="radio" aria-checked="false">
+            <span class="pill-icon">🎬</span> Golden Era '64–'69 (<span id="count-golden">340</span>)
+          </button>
+          <button type="button" class="filter-pill" data-filter="morricone" role="radio" aria-checked="false">
+            <span class="pill-icon">🎵</span> Morricone & Great Scores (<span id="count-music">85</span>)
+          </button>
+          <button type="button" class="filter-pill" data-filter="seventies" role="radio" aria-checked="false">
+            <span class="pill-icon">🤠</span> 1970s Gritty & Comedy (<span id="count-seventies">210</span>)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Film Result Card Display -->
+    <section class="result-section" id="result-section" aria-live="polite">
+      <article class="western-card" id="film-card">
+        <!-- Card Corner Flourishes -->
+        <div class="card-ornament top-left" aria-hidden="true">✦</div>
+        <div class="card-ornament top-right" aria-hidden="true">✦</div>
+        <div class="card-ornament bottom-left" aria-hidden="true">✦</div>
+        <div class="card-ornament bottom-right" aria-hidden="true">✦</div>
+
+        <!-- Card Header Badge -->
+        <div class="card-header-bar">
+          <span class="card-tag">SPAGHETTI WESTERN DISCOVERY</span>
+          <span class="card-film-number" id="film-vault-number">VAULT ENTRY #---</span>
+        </div>
+
+        <!-- Title & Year -->
+        <div class="card-title-block">
+          <h3 class="film-title" id="film-title">Loading Vault Title...</h3>
+          <span class="film-year" id="film-year">(----)</span>
+        </div>
+
+        <!-- Alternative Titles -->
+        <div class="alt-titles-wrapper" id="alt-titles-box">
+          <span class="alt-titles-label">Also Known As:</span>
+          <p class="alt-titles-text" id="film-alt-titles">—</p>
+        </div>
+
+        <!-- Key Personnel 4-Box Grid -->
+        <div class="personnel-grid">
+          <div class="personnel-card">
+            <div class="personnel-header">
+              <span class="personnel-icon">🎬</span>
+              <span class="personnel-role">DIRECTOR</span>
+            </div>
+            <div class="personnel-name" id="film-director">—</div>
+          </div>
+
+          <div class="personnel-card">
+            <div class="personnel-header">
+              <span class="personnel-icon">⭐</span>
+              <span class="personnel-role">STARRING</span>
+            </div>
+            <div class="personnel-name" id="film-star">—</div>
+          </div>
+
+          <div class="personnel-card">
+            <div class="personnel-header">
+              <span class="personnel-icon">🤠</span>
+              <span class="personnel-role">FEATURING</span>
+            </div>
+            <div class="personnel-name" id="film-costars">—</div>
+          </div>
+
+          <div class="personnel-card">
+            <div class="personnel-header">
+              <span class="personnel-icon">🎵</span>
+              <span class="personnel-role">SOUNDTRACK</span>
+            </div>
+            <div class="personnel-name" id="film-music">—</div>
+          </div>
+        </div>
+
+        <!-- Editorial Synopsis Box -->
+        <div class="synopsis-box">
+          <div class="synopsis-header">
+            <span class="synopsis-badge">📜 EDITORIAL SYNOPSIS &amp; HISTORICAL NOTES</span>
+          </div>
+          <p class="synopsis-content" id="film-synopsis">
+            Click the red "Surprise Me" button above or press Space to randomly select and review a Spaghetti Western from our 560+ title archive.
+          </p>
+        </div>
+
+        <!-- Card Actions -->
+        <div class="card-actions">
+          <button type="button" class="btn-card-action btn-draw-again" id="card-draw-btn">
+            <span>🎲</span> DRAW ANOTHER FILM
+          </button>
+          <button type="button" class="btn-card-action btn-share" id="share-btn">
+            <span>🔗</span> SHARE THIS FILM
+          </button>
+          <a href="https://flickfuture.com/flickfinder" target="_blank" rel="noopener noreferrer" class="btn-card-action btn-search-more" id="flickfinder-card-link">
+            <span>🔍</span> SEARCH ARCHIVE ON FLICKFINDER →
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Recent Session Draws History Drawer -->
+    <section class="recent-draws-section" id="recent-section">
+      <div class="recent-header">
+        <h4 class="recent-title">🤠 YOUR RECENT DRAWS IN THIS SESSION</h4>
+        <button type="button" class="recent-clear-btn" id="clear-history-btn" title="Clear history">Clear</button>
+      </div>
+      <div class="recent-scroll-container" id="recent-list">
+        <p class="recent-empty">Your drawn films will appear here for quick reference.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Ad Slot (CLS Protected) -->
+  <div class="ad-slot-container" id="ad-bottom-container">
+    <div class="ad-placeholder" id="ad-bottom-slot" aria-label="Advertisement Banner">
+      <span class="ad-label">ADVERTISEMENT</span>
+      <!-- Google AdSense banner code can be placed here -->
+    </div>
+  </div>
+
+  <!-- Traffic Funnel Callout Card -->
+  <section class="funnel-banner-wrapper">
+    <div class="funnel-banner">
+      <div class="funnel-icon">🏜️</div>
+      <div class="funnel-text">
+        <h3 class="funnel-title">Want to look up a specific film, actor, or music composer?</h3>
+        <p class="funnel-description">
+          Looking for a specific film, actor, or director? Search our complete 500+ title archive at FlickFinder →
+        </p>
+      </div>
+      <a href="https://flickfuture.com/flickfinder" target="_blank" rel="noopener noreferrer" class="funnel-btn">
+        SEARCH COMPLETE DATABASE AT FLICKFINDER →
+      </a>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-badge">
+        <span class="seal-icon">⚡</span>
+        <span class="seal-text">SPAGHETTI WESTERN DISCOVERY ARCHIVE</span>
+      </div>
+      <p class="footer-copy">
+        An interactive digital tribute to 1960s &amp; 1970s Italian and European frontier cinema. Featuring 560 curated films, directors, and soundtracks.
+      </p>
+      <div class="footer-links">
+        <a href="https://flickfuture.com/flickfinder" target="_blank" rel="noopener noreferrer">FlickFinder Complete Search</a>
+        <span class="divider">•</span>
+        <a href="https://spaghetti.westerns.softcoverbooks.co.za/">Discovery Home</a>
+        <span class="divider">•</span>
+        <a href="#main-app">Back to Top ↑</a>
+      </div>
+      <p class="footer-subcopy">
+        Crafted for cult cinema aficionados. Hosted on Cloudflare Pages.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast" role="status" aria-live="polite">
+    <span class="toast-icon">📋</span>
+    <span class="toast-message" id="toast-text">Film link copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

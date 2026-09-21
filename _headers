@@ -1,0 +1,25 @@
+# Cloudflare Pages Headers Configuration
+# Security, Performance, and Cache Control
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+
+# Cache westerns.json for fast edge delivery with revalidation
+/westerns.json
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Access-Control-Allow-Origin: *
+
+# Cache static CSS and JS assets
+/style.css
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/app.js
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# Cache images
+/*.jpg
+  Cache-Control: public, max-age=604800, immutable

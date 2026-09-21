@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spaghetti.westerns.softcoverbooks.co.za/sitemap.xml
