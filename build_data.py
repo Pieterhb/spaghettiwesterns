@@ -143,6 +143,15 @@ def main():
     <priority>1.0</priority>
   </url>""")
 
+    # Compliance & Trust pages
+    for page in ["about.html", "privacy.html", "terms.html", "contact.html"]:
+        sitemap_lines.append(f"""  <url>
+    <loc>{SITE_URL}/{page}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>""")
+
     # Deep links for each film
     for m in movies:
         sitemap_lines.append(f"""  <url>
