@@ -11,7 +11,7 @@ import re
 import sys
 from datetime import datetime
 
-SITE_URL = "https://spaghetti.westerns.softcoverbooks.co.za"
+SITE_URL = "https://spaghetti-westerns.softcoverbooks.co.za"
 
 # Famous Spaghetti Western icons to tag for the "Cult Icons" filter
 CULT_ICONS = [

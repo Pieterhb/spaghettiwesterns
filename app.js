@@ -306,7 +306,7 @@
           "name": movie.lead_actor
         }
       ],
-      "url": `https://spaghetti.westerns.softcoverbooks.co.za/?film=${movie.slug}`
+      "url": `https://spaghetti-westerns.softcoverbooks.co.za/?film=${movie.slug}`
     };
 
     scriptTag.textContent = JSON.stringify(movieSchema, null, 2);
