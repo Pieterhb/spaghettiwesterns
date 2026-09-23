@@ -210,13 +210,6 @@ def generate_archive_html(movies: list, output_file: str = "archive.html"):
     </div>
   </header>
 
-  <!-- Top Ad Slot (CLS Protected) -->
-  <div class="ad-slot-container">
-    <div class="ad-placeholder" id="ad-top-slot" aria-label="Advertisement Banner">
-      <span class="ad-label">ADVERTISEMENT</span>
-    </div>
-  </div>
-
   <main class="main-content">
     <!-- Alphabetical Jump Bar -->
     <nav class="alpha-nav" aria-label="Alphabetical Jump Navigation">
@@ -231,13 +224,6 @@ def generate_archive_html(movies: list, output_file: str = "archive.html"):
       {"".join(sections_html)}
     </div>
   </main>
-
-  <!-- Bottom Ad Slot (CLS Protected) -->
-  <div class="ad-slot-container">
-    <div class="ad-placeholder" id="ad-bottom-slot" aria-label="Advertisement Banner">
-      <span class="ad-label">ADVERTISEMENT</span>
-    </div>
-  </div>
 
   <!-- Traffic Funnel Callout Card -->
   <section class="funnel-banner-wrapper">

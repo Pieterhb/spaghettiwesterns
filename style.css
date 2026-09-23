@@ -237,7 +237,7 @@ body {
 .main-content {
   max-width: 860px;
   margin: 0 auto;
-  padding: 1.5rem 1rem 2rem;
+  padding: 1.5rem 1rem 0;
   position: relative;
   z-index: 2;
 }
@@ -811,7 +811,7 @@ body {
    ========================================================================== */
 .funnel-banner-wrapper {
   max-width: 860px;
-  margin: 1.5rem auto 0;
+  margin: 1.2rem auto 0;
   padding: 0 1rem;
   position: relative;
   z-index: 2;
@@ -881,7 +881,7 @@ body {
    SITE FOOTER
    ========================================================================== */
 .site-footer {
-  margin-top: 2rem;
+  margin-top: 1.2rem;
   background: #110d0b;
   border-top: 3px solid var(--accent-gold);
   color: #a89488;
@@ -1163,6 +1163,10 @@ body {
   transition: border-color var(--transition-fast);
 }
 
+.faq-item:last-child {
+  margin-bottom: 0;
+}
+
 .faq-item[open] {
   border-color: var(--accent-gold);
   background: #ffffff;
@@ -1245,6 +1249,10 @@ body {
 .archive-letter-section {
   margin-bottom: 1.5rem;
   scroll-margin-top: 2rem;
+}
+
+.archive-letter-section:last-child {
+  margin-bottom: 0;
 }
 
 .letter-header {
