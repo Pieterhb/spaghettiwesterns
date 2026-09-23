@@ -33,3 +33,7 @@
 
 /*.webp
   Cache-Control: public, max-age=31536000, immutable
+
+# Audio: immutable long cache
+/*.mp3
+  Cache-Control: public, max-age=31536000, immutable

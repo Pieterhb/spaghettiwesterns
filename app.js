@@ -51,55 +51,22 @@
   const countMusic = document.getElementById('count-music');
   const countSeventies = document.getElementById('count-seventies');
 
-  // --- Web Audio API Synthesizer (Zero External Assets) ---
-  let audioCtx = null;
-
-  function initAudio() {
-    if (!audioCtx) {
-      const AudioContext = window.AudioContext || window.webkitAudioContext;
-      if (AudioContext) {
-        audioCtx = new AudioContext();
-      }
-    }
-    if (audioCtx && audioCtx.state === 'suspended') {
-      audioCtx.resume();
-    }
-  }
+  // --- Audio Effects ---
+  const gunshotAudio = new Audio('Gunshot.mp3');
+  gunshotAudio.preload = 'auto';
 
   function playDrawSound() {
     if (!soundEnabled) return;
     try {
-      initAudio();
-      if (!audioCtx) return;
-
-      const now = audioCtx.currentTime;
-
-      // 1. Revolver cylinder click / mechanical tick
-      const osc = audioCtx.createOscillator();
-      const gain = audioCtx.createGain();
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(440, now);
-      osc.frequency.exponentialRampToValueAtTime(110, now + 0.08);
-      gain.gain.setValueAtTime(0.3, now);
-      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
-      osc.connect(gain);
-      gain.connect(audioCtx.destination);
-      osc.start(now);
-      osc.stop(now + 0.08);
-
-      // 2. Resonant Western Saloon chime
-      const bellOsc = audioCtx.createOscillator();
-      const bellGain = audioCtx.createGain();
-      bellOsc.type = 'sine';
-      bellOsc.frequency.setValueAtTime(587.33, now + 0.05); // D5
-      bellGain.gain.setValueAtTime(0.15, now + 0.05);
-      bellGain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
-      bellOsc.connect(bellGain);
-      bellGain.connect(audioCtx.destination);
-      bellOsc.start(now + 0.05);
-      bellOsc.stop(now + 0.4);
+      gunshotAudio.currentTime = 0;
+      const playPromise = gunshotAudio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay policy fallback if user has not interacted yet
+        });
+      }
     } catch (e) {
-      // Audio autoplay policy fallback
+      // Audio playback fallback
     }
   }
 
