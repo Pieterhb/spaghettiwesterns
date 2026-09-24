@@ -1414,6 +1414,16 @@ body {
     font-size: 1.9rem;
   }
 
+  /* Point nr 3: Snug spacing between ticker HUD and Surprise Me button */
+  .slot-machine-hud {
+    margin: 0 auto 0.4rem;
+  }
+
+  /* Centerpiece button stage */
+  .button-stage {
+    margin: 0.4rem 0 0.4rem;
+  }
+
   .btn-surprise-me {
     padding: 1rem 2rem;
     min-width: 260px;
@@ -1423,6 +1433,15 @@ body {
 
   .btn-text {
     font-size: 1.4rem;
+  }
+
+  /* Point nr 4: Snug spacing between Surprise Me button and filter section */
+  .filters-container {
+    margin-top: 0.5rem;
+  }
+
+  .filters-label {
+    margin-bottom: 0.5rem;
   }
 
   .western-card {
@@ -1442,6 +1461,21 @@ body {
     width: 100%;
   }
 
+  /* Point nr 2: Snug spacing between FAQ container and FlickFinder banner */
+  .editorial-faq-section {
+    padding: 1.2rem 1.1rem 0.9rem;
+    margin-top: 1.2rem;
+  }
+
+  .faq-container {
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
+  }
+
+  .funnel-banner-wrapper {
+    margin: 0.9rem auto 0;
+  }
+
   .funnel-banner {
     padding: 1.4rem 1.2rem;
   }
@@ -1452,3 +1486,4 @@ body {
     font-size: 0.85rem;
   }
 }
+

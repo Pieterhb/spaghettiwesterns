@@ -55,18 +55,42 @@
   const gunshotAudio = new Audio('Gunshot.mp3');
   gunshotAudio.preload = 'auto';
 
+  // Prime audio buffer on first mobile touch/click gesture
+  function primeAudioOnFirstInteraction() {
+    const unlock = () => {
+      try {
+        gunshotAudio.load();
+      } catch (e) {}
+      window.removeEventListener('touchstart', unlock, true);
+      window.removeEventListener('touchend', unlock, true);
+      window.removeEventListener('click', unlock, true);
+    };
+    window.addEventListener('touchstart', unlock, { capture: true, once: true, passive: true });
+    window.addEventListener('touchend', unlock, { capture: true, once: true, passive: true });
+    window.addEventListener('click', unlock, { capture: true, once: true, passive: true });
+  }
+
   function playDrawSound() {
     if (!soundEnabled) return;
     try {
-      gunshotAudio.currentTime = 0;
-      const playPromise = gunshotAudio.play();
+      // Use clone to allow rapid repeated gunfire shots without clipping
+      const sound = gunshotAudio.cloneNode();
+      sound.volume = 0.9;
+      const playPromise = sound.play();
       if (playPromise !== undefined) {
         playPromise.catch(() => {
-          // Autoplay policy fallback if user has not interacted yet
+          // Fallback to base audio instance if clone playback is restricted
+          try {
+            gunshotAudio.currentTime = 0;
+            gunshotAudio.play().catch(() => {});
+          } catch (err) {}
         });
       }
     } catch (e) {
-      // Audio playback fallback
+      try {
+        gunshotAudio.currentTime = 0;
+        gunshotAudio.play().catch(() => {});
+      } catch (err) {}
     }
   }
 
@@ -512,6 +536,7 @@
 
   // --- Bootstrapping ---
   document.addEventListener('DOMContentLoaded', () => {
+    primeAudioOnFirstInteraction();
     initSoundSetting();
     attachEventListeners();
     loadWesternsData();

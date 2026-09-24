@@ -167,7 +167,7 @@ def generate_archive_html(movies: list, output_file: str = "archive.html"):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Lora:ital,wght@0,400;0,600;1,400&family=Rye&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2.1">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
