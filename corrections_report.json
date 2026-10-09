@@ -1,0 +1,2885 @@
+[
+  {
+    "movie_id": 1,
+    "movie_title": "Ace High",
+    "movie_year": "1967",
+    "field": "year",
+    "our_value": "1967",
+    "reference_value": "1968",
+    "source": "https://www.spaghetti-western.net/index.php/Quattro_dell%27Ave_Maria,_I",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1968"
+  },
+  {
+    "movie_id": 1,
+    "movie_title": "Ace High",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Brock Peters",
+      "Kevin McCarthy",
+      "Tiffany Hoyveld"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Quattro_dell%27Ave_Maria,_I",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 2,
+    "movie_title": "Adios Cjamango",
+    "movie_year": "1969",
+    "field": "year",
+    "our_value": "1969",
+    "reference_value": "1970",
+    "source": "https://onceuponatimeinawestern.com/adios-cjamango-1970/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Adios Cjamango (1970) ... Carlos Quiney is Allan Jackson (aka Chamango) and Claudia Gravy is his new wife Peggy, but the'"
+  },
+  {
+    "movie_id": 3,
+    "movie_title": "Adios Gringo",
+    "movie_year": "1965",
+    "field": "co_stars",
+    "our_value": [
+      "Evelyn Stewart",
+      "Ted Carter",
+      "Peter Cross",
+      "Max Dean"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Adios_Gringo",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 8,
+    "movie_title": "Among Vultures",
+    "movie_year": "1964",
+    "field": "co_stars",
+    "our_value": [
+      "Elke Sommer"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Unter_Geiern",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 16,
+    "movie_title": "Apache's Last Battle",
+    "movie_year": "1964",
+    "field": "co_stars",
+    "our_value": [
+      "Daliah Lavi",
+      "Rick Battaglia"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Old_Shatterhand",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 19,
+    "movie_title": "Arizona Colt",
+    "movie_year": "1965",
+    "field": "year",
+    "our_value": "1965",
+    "reference_value": "1966",
+    "source": "https://www.spaghetti-western.net/index.php/Arizona_Colt",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1966"
+  },
+  {
+    "movie_id": 24,
+    "movie_title": "Man Called Sledge",
+    "movie_year": "1970",
+    "field": "director",
+    "our_value": "Vic Morrow / Giorgio Gentili",
+    "reference_value": "Not found in SWDb people: ['Bruno Corazzari', 'Fausto Tozzi', 'Franco Balducci', 'Gianni Ferrio', 'Giovanni Di Benedetto']",
+    "source": "https://www.spaghetti-western.net/index.php/A_Man_Called_Sledge",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 24,
+    "movie_title": "Man Called Sledge",
+    "movie_year": "1970",
+    "field": "lead_actor",
+    "our_value": "James Garner",
+    "reference_value": "Not found in SWDb people: ['Bruno Corazzari', 'Fausto Tozzi', 'Franco Balducci', 'Gianni Ferrio', 'Giovanni Di Benedetto', 'Herman Reynoso', 'Ken Clark', 'Lorenzo Fineschi']",
+    "source": "https://www.spaghetti-western.net/index.php/A_Man_Called_Sledge",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 24,
+    "movie_title": "Man Called Sledge",
+    "movie_year": "1970",
+    "field": "co_stars",
+    "our_value": [
+      "Laura Antonelli",
+      "Dennis Weaver",
+      "Claude Akins",
+      "John Marley"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/A_Man_Called_Sledge",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 33,
+    "movie_title": "Massacre at Fort Grant",
+    "movie_year": "1963",
+    "field": "year",
+    "our_value": "1963",
+    "reference_value": "1964",
+    "source": "https://en.wikipedia.org/wiki/Cris_Huerta",
+    "confidence": "medium",
+    "note": "Year from web search description: 'He was known mainly for his roles in spaghetti western films of the 1960s and 1970s. ... Massacre at Fort Grant (1964) -'"
+  },
+  {
+    "movie_id": 35,
+    "movie_title": "Massacre at Grand Canyon",
+    "movie_year": "1963",
+    "field": "co_stars",
+    "our_value": [
+      "Jill Powers",
+      "Giacomo Rossi Stuart",
+      "Burt Nelson"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Massacro_al_Grande_Canyon",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 37,
+    "movie_title": "Massacre Time",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "John MacDouglas",
+      "Lynn Shayne"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Tempo_di_massacro",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 38,
+    "movie_title": "Matalo!",
+    "movie_year": "1971",
+    "field": "year",
+    "our_value": "1971",
+    "reference_value": "1970",
+    "source": "https://en.wikipedia.org/wiki/Spaghetti_Western",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Matalo! (1970) by Cesare Canevari · Compañeros (1970) by Sergio Corbucci · Vengeance Is a Dish Served Cold (1971) by Pas'"
+  },
+  {
+    "movie_id": 40,
+    "movie_title": "Mercenary",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Eduardo Fajardo",
+      "Julio Peña"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Mercenario,_Il",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 41,
+    "movie_title": "Minnesota Clay",
+    "movie_year": "1964",
+    "field": "co_stars",
+    "our_value": [
+      "Georges Rivière",
+      "Joe Kamel"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Minnesota_Clay",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 45,
+    "movie_title": "Montana Trap",
+    "movie_year": "1976",
+    "field": "director",
+    "our_value": "Peter Schamoni",
+    "reference_value": "Not found in SWDb people: ['Carl Rapp', 'Dan van Husen', 'David Hess', 'David Thomson', 'Fernando Villena']",
+    "source": "https://www.spaghetti-western.net/index.php/Potato_Fritz",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 45,
+    "movie_title": "Montana Trap",
+    "movie_year": "1976",
+    "field": "lead_actor",
+    "our_value": "Hardy Kruger",
+    "reference_value": "Not found in SWDb people: ['Carl Rapp', 'Dan van Husen', 'David Hess', 'David Thomson', 'Fernando Villena', 'Germany', 'José Terrón', 'Juan Majan']",
+    "source": "https://www.spaghetti-western.net/index.php/Potato_Fritz",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 45,
+    "movie_title": "Montana Trap",
+    "movie_year": "1976",
+    "field": "co_stars",
+    "our_value": [
+      "Anton Diffring",
+      "Friedrich Von Ledebur",
+      "Arthur Brauss"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Potato_Fritz",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 53,
+    "movie_title": "Navajo Joe",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Simon Arraga",
+      "Tanya Lopert"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Navajo_Joe",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 60,
+    "movie_title": "Nude Django",
+    "movie_year": "1968",
+    "field": "director",
+    "our_value": "Ron Elliot",
+    "reference_value": "Not found in SWDb people: ['Sex western', 'USA']",
+    "source": "https://www.spaghetti-western.net/index.php/Brand_of_Shame",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 60,
+    "movie_title": "Nude Django",
+    "movie_year": "1968",
+    "field": "lead_actor",
+    "our_value": "Peter Graf",
+    "reference_value": "Not found in SWDb people: ['Sex western', 'USA']",
+    "source": "https://www.spaghetti-western.net/index.php/Brand_of_Shame",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 60,
+    "movie_title": "Nude Django",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Donna West",
+      "Steve Allen",
+      "Edgar Wertz",
+      "Lynn Hall"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Brand_of_Shame",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 61,
+    "movie_title": "On the Third Day Arrived the Crow",
+    "movie_year": "1972",
+    "field": "year",
+    "our_value": "1972",
+    "reference_value": "1973",
+    "source": "https://m.imdb.com/title/tt0070478/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Rating 3.8/10(73)Release date · July 21, 1973 (Italy) · Country of origin. Italy · Language. Italian · Also known as. On'"
+  },
+  {
+    "movie_id": 62,
+    "movie_title": "Once Upon a Time in the West",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Jason Robards",
+      "Gabriele Ferzetti"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/C%27era_una_volta_il_West",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 64,
+    "movie_title": "One After Another",
+    "movie_year": "1968",
+    "field": "director",
+    "our_value": "Nick Nostro (as Nick Howard)",
+    "reference_value": "Not found in SWDb people: ['Alberigo Donadeo', 'Angelo Casadei', 'Augusto Funari', 'Berto Pisano', 'Bino Cicogna']",
+    "source": "https://www.spaghetti-western.net/index.php/Uno_dopo_l%27altro",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 64,
+    "movie_title": "One After Another",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Paul Stevens",
+      "José Bodalo"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Uno_dopo_l%27altro",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 68,
+    "movie_title": "Outlaw of Red River",
+    "movie_year": "1966",
+    "field": "year",
+    "our_value": "1966",
+    "reference_value": "1965",
+    "source": "https://onceuponatimeinawestern.com/outlaw-of-red-river-1965/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'George Montgomery as Reese O'Brien in Outlaw of Red River (1965) ; Elisa Montes as Francisca Riano in Outlaw of Red Rive'"
+  },
+  {
+    "movie_id": 70,
+    "movie_title": "Pancho Villa",
+    "movie_year": "1972",
+    "field": "co_stars",
+    "our_value": [
+      "Clint Walker",
+      "Anne Francis",
+      "José Maria Prada"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Pancho_Villa",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 86,
+    "movie_title": "Price of Power",
+    "movie_year": "1969",
+    "field": "co_stars",
+    "our_value": [
+      "Van Johnson",
+      "José Suarez",
+      "Warren Vanders"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Prezzo_del_potere,_Il",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 89,
+    "movie_title": "Quintana: Dead or Alive",
+    "movie_year": "1969",
+    "field": "lead_actor",
+    "our_value": "George Stevenson",
+    "reference_value": "Not found in SWDb people: ['Alberigo Donadeo', 'Aldo Bufi Landi', 'Amerigo Castrighella', 'Angelo Susani', 'Antonietta Fiorito', 'Antonio Danesi', 'Artemio Antonini', 'Celso Faria']",
+    "source": "https://www.spaghetti-western.net/index.php/Quintana",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 89,
+    "movie_title": "Quintana: Dead or Alive",
+    "movie_year": "1969",
+    "field": "co_stars",
+    "our_value": [
+      "Pedro Sanchez",
+      "John Levery"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Quintana",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 91,
+    "movie_title": "Ramon the Mexican",
+    "movie_year": "1966",
+    "field": "lead_actor",
+    "our_value": "Robert Hundar",
+    "reference_value": "Not found in SWDb people: ['Aldo Berti', 'Antonio Basile', 'Armando Carini', 'Augusto Funari', 'Claudio Biava', 'Claudio Undari', 'Felice Di Stefano', 'Ferruccio Viotti']",
+    "source": "https://www.spaghetti-western.net/index.php/Ramon_il_Messicano",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 91,
+    "movie_title": "Ramon the Mexican",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Thomas Clay",
+      "Renato Trottolo"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Ramon_il_Messicano",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 92,
+    "movie_title": "Rampage at Apache Wells",
+    "movie_year": "1965",
+    "field": "year",
+    "our_value": "1965",
+    "reference_value": "2019",
+    "source": "https://onceuponatimeinawestern.com/rampage-at-apache-wells-1965/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Rating 5.0(1)Dec 2, 2019 · Rampage at Apache Wells (1965) ... Walter Barnes is Bill Campbell, a wagon master hoping he a'"
+  },
+  {
+    "movie_id": 96,
+    "movie_title": "Red Blood, Yellow Gold",
+    "movie_year": "1968",
+    "field": "year",
+    "our_value": "1968",
+    "reference_value": "1967",
+    "source": "https://www.spaghetti-western.net/index.php/Professionisti_per_un_massacro",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1967"
+  },
+  {
+    "movie_id": 96,
+    "movie_title": "Red Blood, Yellow Gold",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Monica Randall",
+      "Gerard Herter"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Professionisti_per_un_massacro",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 99,
+    "movie_title": "Red Sun",
+    "movie_year": "1971",
+    "field": "director",
+    "our_value": "Terence Young",
+    "reference_value": "Not found in SWDb people: ['Alain Delon', 'Anthony Dawson', 'Antonio Ponciano', 'Barta Barri', 'Charles Bronson']",
+    "source": "https://www.spaghetti-western.net/index.php/Soleil_rouge",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 99,
+    "movie_title": "Red Sun",
+    "movie_year": "1971",
+    "field": "co_stars",
+    "our_value": [
+      "Lee Burton",
+      "Capucine"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Soleil_rouge",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 105,
+    "movie_title": "Return of Sabata",
+    "movie_year": "1972",
+    "field": "year",
+    "our_value": "1972",
+    "reference_value": "1971",
+    "source": "https://www.spaghetti-western.net/index.php/%C3%88_tornato_Sabata..._hai_chiuso_un%27altra_volta",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1971"
+  },
+  {
+    "movie_id": 105,
+    "movie_title": "Return of Sabata",
+    "movie_year": "1972",
+    "field": "co_stars",
+    "our_value": [
+      "Pedro Sanchez",
+      "Mario Brega"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/%C3%88_tornato_Sabata..._hai_chiuso_un%27altra_volta",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 108,
+    "movie_title": "Reverend Colt",
+    "movie_year": "1970",
+    "field": "co_stars",
+    "our_value": [
+      "Thomas Moore",
+      "Maria Martin",
+      "German Cobos",
+      "Pedro Sanchez"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Reverendo_Colt",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 114,
+    "movie_title": "Ringo and His Golden Pistol",
+    "movie_year": "1966",
+    "field": "year",
+    "our_value": "1966",
+    "reference_value": "1965",
+    "source": "https://www.spaghetti-western.net/index.php/Johnny_Oro",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1965"
+  },
+  {
+    "movie_id": 118,
+    "movie_title": "Rita of the West",
+    "movie_year": "1967",
+    "field": "year",
+    "our_value": "1967",
+    "reference_value": "2015",
+    "source": "https://m.imdb.com/title/tt0062205/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Rating 4.6/10(741)Featured in The Cinema Snob: Little Rita of the West (2015). Soundtracks. Little Rita Written by Rober'"
+  },
+  {
+    "movie_id": 122,
+    "movie_title": "Run Man, Run",
+    "movie_year": "1967",
+    "field": "year",
+    "our_value": "1967",
+    "reference_value": "1968",
+    "source": "https://www.spaghetti-western.net/index.php/Corri,_uomo,_corri",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1968"
+  },
+  {
+    "movie_id": 122,
+    "movie_title": "Run Man, Run",
+    "movie_year": "1967",
+    "field": "lead_actor",
+    "our_value": "Tomás Milian",
+    "reference_value": "Not found in SWDb people: ['Alba Maiolini', 'Angelo Boscariol', 'Angelo Susani', 'Antonio Sempere', 'Attilio Dottesio', 'Bruno Nicolai', 'Calisto Calisti', 'Calogero Azzaretto']",
+    "source": "https://www.spaghetti-western.net/index.php/Corri,_uomo,_corri",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 122,
+    "movie_title": "Run Man, Run",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Rick Boyd"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Corri,_uomo,_corri",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 123,
+    "movie_title": "Ruthless Colt of the Gringo",
+    "movie_year": "1967",
+    "field": "director",
+    "our_value": "José Luis Madrid",
+    "reference_value": "Not found in SWDb people: ['Reviews']",
+    "source": "https://www.spaghetti-western.net/index.php/Ruthless_Colt_of_the_Gringo",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 123,
+    "movie_title": "Ruthless Colt of the Gringo",
+    "movie_year": "1967",
+    "field": "lead_actor",
+    "our_value": "Luigi Giuliano (as Jim Reed)",
+    "reference_value": "Not found in SWDb people: ['Reviews']",
+    "source": "https://www.spaghetti-western.net/index.php/Ruthless_Colt_of_the_Gringo",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 123,
+    "movie_title": "Ruthless Colt of the Gringo",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Carlo Fabrizi",
+      "Martha Dovan",
+      "Pat Greenhill",
+      "Luis Induñi",
+      "Charles Otter"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Ruthless_Colt_of_the_Gringo",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 125,
+    "movie_title": "Sabata",
+    "movie_year": "1969",
+    "field": "co_stars",
+    "our_value": [
+      "Pedro Sanchez",
+      "Robert Hundar"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Ehi_amico..._c%27%C3%A8_Sabata,_hai_chiuso!",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 128,
+    "movie_title": "Sartana",
+    "movie_year": "1968",
+    "field": "director",
+    "our_value": "Gianfranco Parolini (as Frank Kramer)",
+    "reference_value": "Not found in SWDb people: ['Articles', 'Characters']",
+    "source": "https://www.spaghetti-western.net/index.php/Sartana",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 128,
+    "movie_title": "Sartana",
+    "movie_year": "1968",
+    "field": "lead_actor",
+    "our_value": "Gianni Garko",
+    "reference_value": "Not found in SWDb people: ['Articles', 'Characters']",
+    "source": "https://www.spaghetti-western.net/index.php/Sartana",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 128,
+    "movie_title": "Sartana",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Klaus Kinski",
+      "Fernando Sancho",
+      "William Berger",
+      "Sydney Chaplin",
+      "Gianni Rizzo"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Sartana",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 129,
+    "movie_title": "Sartana Does Not Forgive",
+    "movie_year": "1968",
+    "field": "director",
+    "our_value": "Alfonso Balcazar",
+    "reference_value": "Not found in SWDb people: ['Alfonso Balcázar', 'Antonio Almorós', 'Barcelona', 'Carlos Ronda', 'Donatella Turri']",
+    "source": "https://www.spaghetti-western.net/index.php/Sonora",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 129,
+    "movie_title": "Sartana Does Not Forgive",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Hugo Blanco",
+      "Gerard Tichy"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Sonora",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 145,
+    "movie_title": "Shadow of Sartana... Shadow of Your Death",
+    "movie_year": "1968",
+    "field": "year",
+    "our_value": "1968",
+    "reference_value": "1969",
+    "source": "https://en.wikipedia.org/wiki/Shadow_of_Sartana_..._Shadow_of_Your_Death",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Shadow of Sartana ... Shadow of Your Death is a 1969 Italian Spaghetti Western directed and written by Demofilo Fidani T'"
+  },
+  {
+    "movie_id": 146,
+    "movie_title": "Shadow of Zorro",
+    "movie_year": "1963",
+    "field": "year",
+    "our_value": "1963",
+    "reference_value": "1962",
+    "source": "https://letterboxd.com/film/the-shadow-of-zorro/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'The Shadow of Zorro. 1962. L'ombra di Zorro. Directed by Joaquín Romero Marchent ...'"
+  },
+  {
+    "movie_id": 147,
+    "movie_title": "Shalako",
+    "movie_year": "1968",
+    "field": "director",
+    "our_value": "Edward Dmytryk",
+    "reference_value": "Not found in SWDb people: ['Alexander Knox', 'Artur Brauner', 'Brigitte Bardot', 'Charles Stalmaker', 'Germany']",
+    "source": "https://www.spaghetti-western.net/index.php/Shalako",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 147,
+    "movie_title": "Shalako",
+    "movie_year": "1968",
+    "field": "lead_actor",
+    "our_value": "Sean Connery",
+    "reference_value": "Not found in SWDb people: ['Alexander Knox', 'Artur Brauner', 'Brigitte Bardot', 'Charles Stalmaker', 'Germany', 'Jim Dale', 'John Clark', 'José Terrón']",
+    "source": "https://www.spaghetti-western.net/index.php/Shalako",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 147,
+    "movie_title": "Shalako",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Jack Hawkins"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Shalako",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 148,
+    "movie_title": "Shango",
+    "movie_year": "1969",
+    "field": "year",
+    "our_value": "1969",
+    "reference_value": "1970",
+    "source": "https://www.spaghetti-western.net/index.php/Shango,_la_pistola_infallibile",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1970"
+  },
+  {
+    "movie_id": 148,
+    "movie_title": "Shango",
+    "movie_year": "1969",
+    "field": "co_stars",
+    "our_value": [
+      "Eduardo Fajardo",
+      "Massimo Carrocci"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Shango,_la_pistola_infallibile",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 150,
+    "movie_title": "Sheriff Was a Lady",
+    "movie_year": "1965",
+    "field": "year",
+    "our_value": "1965",
+    "reference_value": "1964",
+    "source": "https://www.spaghetti-western.net/index.php/Freddy_und_das_Lied_der_Pr%C3%A4rie",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1964"
+  },
+  {
+    "movie_id": 150,
+    "movie_title": "Sheriff Was a Lady",
+    "movie_year": "1965",
+    "field": "co_stars",
+    "our_value": [
+      "Mamie Van Doren",
+      "Trude Herr"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Freddy_und_das_Lied_der_Pr%C3%A4rie",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 151,
+    "movie_title": "Sheriff with the Gold",
+    "movie_year": "1966",
+    "field": "director",
+    "our_value": "Osvaldo Civirani (as Richard Kean)",
+    "reference_value": "Not found in SWDb people: ['Reviews']",
+    "source": "https://www.spaghetti-western.net/index.php/Sheriff_with_the_Gold",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 151,
+    "movie_title": "Sheriff with the Gold",
+    "movie_year": "1966",
+    "field": "lead_actor",
+    "our_value": "Louis McJulian",
+    "reference_value": "Not found in SWDb people: ['Reviews']",
+    "source": "https://www.spaghetti-western.net/index.php/Sheriff_with_the_Gold",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 151,
+    "movie_title": "Sheriff with the Gold",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Jacques Berthier",
+      "Kathleen Parker",
+      "Bob Messenger",
+      "Ares Lucky",
+      "Ivan Scratuglia"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Sheriff_with_the_Gold",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 158,
+    "movie_title": "Shots Ring Out!",
+    "movie_year": "1965",
+    "field": "year",
+    "our_value": "1965",
+    "reference_value": "1964",
+    "source": "https://www.spaghetti-western.net/index.php/Cuatro_balazos",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1964"
+  },
+  {
+    "movie_id": 158,
+    "movie_title": "Shots Ring Out!",
+    "movie_year": "1965",
+    "field": "director",
+    "our_value": "Augustin Navarro",
+    "reference_value": "Not found in SWDb people: ['Barbara Nelli', 'Bruno Scipioni', 'Fernando Casanova', 'Francisco Morán', 'José Espinoza \"Ferrusquilla\"']",
+    "source": "https://www.spaghetti-western.net/index.php/Cuatro_balazos",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 158,
+    "movie_title": "Shots Ring Out!",
+    "movie_year": "1965",
+    "field": "co_stars",
+    "our_value": [
+      "Fred Canow (Fernando Casanova)",
+      "Liz Poitel",
+      "Angela Cavo",
+      "Francisco Moran"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Cuatro_balazos",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 159,
+    "movie_title": "Showdown for a Badman",
+    "movie_year": "1972",
+    "field": "year",
+    "our_value": "1972",
+    "reference_value": "1971",
+    "source": "https://www.spaghetti-western.net/index.php/SWDB_Hall_of_Fame/Directors",
+    "confidence": "medium",
+    "note": "Year from web search description: 'His best known directorial efforts are A Barrel Full of Dollars aka A Coffin Full of Dollars aka Nevada Kid aka Showdown'"
+  },
+  {
+    "movie_id": 162,
+    "movie_title": "Silver Saddle",
+    "movie_year": "1978",
+    "field": "co_stars",
+    "our_value": [
+      "Sven Valsecchi",
+      "Cinzia Monreale"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Sella_d%27argento",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 165,
+    "movie_title": "Son of a Gunfighter",
+    "movie_year": "1966",
+    "field": "year",
+    "our_value": "1966",
+    "reference_value": "1965",
+    "source": "https://www.spaghetti-western.net/index.php/Son_of_a_Gunfighter",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1965"
+  },
+  {
+    "movie_id": 165,
+    "movie_title": "Son of a Gunfighter",
+    "movie_year": "1966",
+    "field": "director",
+    "our_value": "Paul Landres",
+    "reference_value": "Not found in SWDb people: ['Aldo Sambrell', 'Antonio Casas', 'Barta Barri', 'Fernando Hilbeck', 'Fernando Rey']",
+    "source": "https://www.spaghetti-western.net/index.php/Son_of_a_Gunfighter",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 165,
+    "movie_title": "Son of a Gunfighter",
+    "movie_year": "1966",
+    "field": "lead_actor",
+    "our_value": "Russ Tamblyn",
+    "reference_value": "Not found in SWDb people: ['Aldo Sambrell', 'Antonio Casas', 'Barta Barri', 'Fernando Hilbeck', 'Fernando Rey', 'Héctor Quiroga', 'James Philbrook', 'Julio Molina']",
+    "source": "https://www.spaghetti-western.net/index.php/Son_of_a_Gunfighter",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 165,
+    "movie_title": "Son of a Gunfighter",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Kieron Moore",
+      "Maria Granada"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Son_of_a_Gunfighter",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 177,
+    "movie_title": "Sugar Colt",
+    "movie_year": "1966",
+    "field": "lead_actor",
+    "our_value": "Hunt Powers (Jack Betts)",
+    "reference_value": "Not found in SWDb people: ['Alberigo Donadeo', 'Alejandro Ulloa', 'Alfonso Giganti', 'Alfonso Rojas', 'Alfred Thomas', 'Antonio Padilla', 'Fernando Di Leo', 'Franco Beltramme']",
+    "source": "https://www.spaghetti-western.net/index.php/Sugar_Colt",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 177,
+    "movie_title": "Sugar Colt",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "James Parker",
+      "Julian Rafferty",
+      "Victor Israel"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Sugar_Colt",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 179,
+    "movie_title": "Take a Hard Ride",
+    "movie_year": "1974",
+    "field": "year",
+    "our_value": "1974",
+    "reference_value": "1975",
+    "source": "https://en.wikipedia.org/wiki/Take_a_Hard_Ride",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Take a Hard Ride is a 1975 Italian-American Spaghetti Western film directed by Anthony Dawson and starring Jim Brown, Le'"
+  },
+  {
+    "movie_id": 184,
+    "movie_title": "Ten Thousand Dollars Blood Money",
+    "movie_year": "1966",
+    "field": "year",
+    "our_value": "1966",
+    "reference_value": "1967",
+    "source": "https://letterboxd.com/film/10000-for-a-massacre/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Rating 3.3(1,151)Review by George Fuller. TEN THOUSAND DOLLARS BLOOD MONEY (1967) Director ... Violence: Shootouts, kill'"
+  },
+  {
+    "movie_id": 190,
+    "movie_title": "Texas, Adios",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "José Suarez"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Texas,_Addio",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 200,
+    "movie_title": "Thompson 1880",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Gian Sandri",
+      "José Bodalo",
+      "José Jaspe",
+      "Pedro Sanchez"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Thompson_1880",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 202,
+    "movie_title": "Three Bullets for a Long Gun",
+    "movie_year": "1970",
+    "field": "lead_actor",
+    "our_value": "Beau Brummell",
+    "reference_value": "Not found in SWDb people: ['Germany', 'Patrick Mynhardt', 'Peter Henkel', 'South Africa']",
+    "source": "https://www.spaghetti-western.net/index.php/Three_Bullets_for_a_Long_Gun",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 202,
+    "movie_title": "Three Bullets for a Long Gun",
+    "movie_year": "1970",
+    "field": "co_stars",
+    "our_value": [
+      "Keith Van Der Wat",
+      "Tullio Moneta",
+      "Don McCorkindale",
+      "Gaby Getz"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Three_Bullets_for_a_Long_Gun",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 205,
+    "movie_title": "Three Musketeers of the West",
+    "movie_year": "1972",
+    "field": "year",
+    "our_value": "1972",
+    "reference_value": "1973",
+    "source": "https://www.imdb.com/title/tt0069425/fullcredits/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'The Three Musketeers of the West (1973) - Cast and crew credits, including actors, actresses, directors, writers and mor'"
+  },
+  {
+    "movie_id": 211,
+    "movie_title": "Time of Vultures",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Eduardo Fajardo"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Tempo_degli_avvoltoi,_Il",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 217,
+    "movie_title": "Trail of the Falcon",
+    "movie_year": "1968",
+    "field": "director",
+    "our_value": "Gottfried Kölditz",
+    "reference_value": "Not found in SWDb people: ['Berko Acker', 'DEFA', 'Germany', 'Gojko Mitic', 'Karl-Ernst Sasse']",
+    "source": "https://www.spaghetti-western.net/index.php/Spur_des_Falken",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 217,
+    "movie_title": "Trail of the Falcon",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Hannjo Hasse",
+      "Barbara Brylska",
+      "Lali Meszchi",
+      "Ralf Hoppe",
+      "Helmut Schreiber"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Spur_des_Falken",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 226,
+    "movie_title": "Twenty Paces to Death",
+    "movie_year": "1970",
+    "field": "director",
+    "our_value": "Manuel Esteba (as Ted Mulligan)",
+    "reference_value": "Not found in SWDb people: ['Alberto Farnese', 'Antonio Molino Rojo', 'César Ojínaga', 'Dean Reed', 'Enrique Escobar']",
+    "source": "https://www.spaghetti-western.net/index.php/Saranda",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 226,
+    "movie_title": "Twenty Paces to Death",
+    "movie_year": "1970",
+    "field": "co_stars",
+    "our_value": [
+      "Albert Farley",
+      "Luis Induñi",
+      "Maria Pia Conte",
+      "Tony Chandler"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Saranda",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 230,
+    "movie_title": "Two Crosses at Danger Pass",
+    "movie_year": "1968",
+    "field": "director",
+    "our_value": "Rafael Romero Marchent",
+    "reference_value": "Not found in SWDb people: ['Reviews']",
+    "source": "https://www.spaghetti-western.net/index.php/Two_Crosses_at_Danger_Pass",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 230,
+    "movie_title": "Two Crosses at Danger Pass",
+    "movie_year": "1968",
+    "field": "lead_actor",
+    "our_value": "Peter Martell",
+    "reference_value": "Not found in SWDb people: ['Reviews']",
+    "source": "https://www.spaghetti-western.net/index.php/Two_Crosses_at_Danger_Pass",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 230,
+    "movie_title": "Two Crosses at Danger Pass",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Anthony Freeman",
+      "Mara Cruz",
+      "Luis Gasper",
+      "Armando Calvo",
+      "Dianik Zurakowska"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Two_Crosses_at_Danger_Pass",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 231,
+    "movie_title": "Two Gangsters in the Wild West",
+    "movie_year": "1965",
+    "field": "year",
+    "our_value": "1965",
+    "reference_value": "1995",
+    "source": "https://letterboxd.com/film/two-gangsters-in-the-wild-west/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Two Gangsters in the Wild West ; Into the Unknown - Bottomless Pit of Creation · ScreenWatcher69 41,213 films 5.5K ; Gen'"
+  },
+  {
+    "movie_id": 233,
+    "movie_title": "Two Pistols and a Coward",
+    "movie_year": "1967",
+    "field": "year",
+    "our_value": "1967",
+    "reference_value": "1968",
+    "source": "https://m.imdb.com/title/tt0063440/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Rating 5.5/10(134)TWO PISTOLS AND A COWARD (Giorgio Ferroni, 1968) **1/2. This was just as obscure an entry in the Spagh'"
+  },
+  {
+    "movie_id": 234,
+    "movie_title": "Two R-R-Ringos from Texas",
+    "movie_year": "1967",
+    "field": "year",
+    "our_value": "1967",
+    "reference_value": "1970",
+    "source": "https://m.imdb.com/title/tt0061600/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Rating 4.6/10(124)Details ; Release date · February 13, 1970 (West Germany) ; Also known as. Two R-R-Ringos from Texas ;'"
+  },
+  {
+    "movie_id": 240,
+    "movie_title": "Ugly Ones",
+    "movie_year": "1966",
+    "field": "lead_actor",
+    "our_value": "Tomás Milian",
+    "reference_value": "Not found in SWDb people: ['Antonio Cintado', 'Antonio Iranzo', 'Chiro Bermejo', 'Dennis Kilbane', 'Enrique Navarro', 'Enzo Fiermonte', 'Eugenio Martin', 'Fernando Sánchez Polack']",
+    "source": "https://www.spaghetti-western.net/index.php/Precio_de_un_hombre,_El",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 240,
+    "movie_title": "Ugly Ones",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Ella Karin"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Precio_de_un_hombre,_El",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 244,
+    "movie_title": "Vengeance",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Sheyla Rosin",
+      "Lee Burton"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Joko_invoca_Dio..._e_muori",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 247,
+    "movie_title": "Viva Maria",
+    "movie_year": "1965",
+    "field": "director",
+    "our_value": "Louis Malle",
+    "reference_value": "Not found in SWDb people: ['Adriana Roel', 'Brigitte Bardot', 'Carlos López Moctezuma', 'Claudio Brook', 'Francisco Reiguera']",
+    "source": "https://www.spaghetti-western.net/index.php/Viva_Maria",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 247,
+    "movie_title": "Viva Maria",
+    "movie_year": "1965",
+    "field": "co_stars",
+    "our_value": [
+      "Jeanne Moreau",
+      "George Hamilton",
+      "Gregor Von Rezzori",
+      "Paulette Dubost"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Viva_Maria",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 248,
+    "movie_title": "Wanted",
+    "movie_year": "1968",
+    "field": "year",
+    "our_value": "1968",
+    "reference_value": "1966",
+    "source": "https://www.spaghetti-western.net/index.php/Wanted",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1966"
+  },
+  {
+    "movie_id": 248,
+    "movie_title": "Wanted",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "German Cobos"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Wanted",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 249,
+    "movie_title": "Wanted Johnny Texas",
+    "movie_year": "1971",
+    "field": "year",
+    "our_value": "1971",
+    "reference_value": "1967",
+    "source": "https://www.spaghetti-western.net/index.php/Wanted_Johnny_Texas",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1967"
+  },
+  {
+    "movie_id": 249,
+    "movie_title": "Wanted Johnny Texas",
+    "movie_year": "1971",
+    "field": "director",
+    "our_value": "Erminio Salvi",
+    "reference_value": "Not found in SWDb people: ['Agostino De Simone', 'Alfonso Giganti', 'Artemio Antonini', 'Bruno Arié', 'Clemente Ukmar']",
+    "source": "https://www.spaghetti-western.net/index.php/Wanted_Johnny_Texas",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 249,
+    "movie_title": "Wanted Johnny Texas",
+    "movie_year": "1971",
+    "field": "lead_actor",
+    "our_value": "James Newman",
+    "reference_value": "Not found in SWDb people: ['Agostino De Simone', 'Alfonso Giganti', 'Artemio Antonini', 'Bruno Arié', 'Clemente Ukmar', 'Dante Maggio', 'Emimmo Salvi', 'Enrico Chiappafreddo']",
+    "source": "https://www.spaghetti-western.net/index.php/Wanted_Johnny_Texas",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 249,
+    "movie_title": "Wanted Johnny Texas",
+    "movie_year": "1971",
+    "field": "co_stars",
+    "our_value": [
+      "Howard Ross"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Wanted_Johnny_Texas",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 250,
+    "movie_title": "Wanted Sabata",
+    "movie_year": "1970",
+    "field": "co_stars",
+    "our_value": [
+      "Enzo Redemonte",
+      "Piero Magalotti"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Wanted_Sabata",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 258,
+    "movie_title": "Winchester Does Not Forgive",
+    "movie_year": "1968",
+    "field": "year",
+    "our_value": "1968",
+    "reference_value": "1967",
+    "source": "https://www.spaghetti-western.net/index.php/Buckaroo",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1967"
+  },
+  {
+    "movie_id": 258,
+    "movie_title": "Winchester Does Not Forgive",
+    "movie_year": "1968",
+    "field": "director",
+    "our_value": "Mario Adelchi Bianchi",
+    "reference_value": "Not found in SWDb people: ['Angela De Leo', 'Antonio Basile', 'Antonio Marcolini', 'Armando Fracassi', 'Artemio Antonini']",
+    "source": "https://www.spaghetti-western.net/index.php/Buckaroo",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 261,
+    "movie_title": "Winnetou: Thunder at the Border",
+    "movie_year": "1967",
+    "field": "year",
+    "our_value": "1967",
+    "reference_value": "1966",
+    "source": "https://www.spaghetti-western.net/index.php/Winnetou_und_sein_Freund_Old_Firehand",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1966"
+  },
+  {
+    "movie_id": 261,
+    "movie_title": "Winnetou: Thunder at the Border",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Todd Armstrong",
+      "Harald Leipnitz",
+      "Nadia Gray"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Winnetou_und_sein_Freund_Old_Firehand",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 262,
+    "movie_title": "Winnetou and Shatterhand in the Valley of Death",
+    "movie_year": "1968",
+    "field": "director",
+    "our_value": "Harald Reinl",
+    "reference_value": "Not found in SWDb people: ['Lex Barker', 'Pierre Brice', 'Reviews', 'Rik Battaglia', 'Winnetou']",
+    "source": "https://www.spaghetti-western.net/index.php/Winnetou_and_Shatterhand_in_the_Valley_of_Death",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 262,
+    "movie_title": "Winnetou and Shatterhand in the Valley of Death",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Ralf Wolter",
+      "Karin Dor",
+      "Eddie Arent"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Winnetou_and_Shatterhand_in_the_Valley_of_Death",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 263,
+    "movie_title": "Winnetou the Warrior",
+    "movie_year": "1963",
+    "field": "year",
+    "our_value": "1963",
+    "reference_value": "1964",
+    "source": "https://www.facebook.com/HistorcHaven/posts/winnetou-2-the-return-of-winnetou-1964-is-a-spaghetti-western-directed-by-harald/122234440190139406/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Winnetou 2: The Return of Winnetou (1964) is a Spaghetti Western directed by Harald Reinl and serves as the sequel to Wi'"
+  },
+  {
+    "movie_id": 267,
+    "movie_title": "Yankee",
+    "movie_year": "1967",
+    "field": "year",
+    "our_value": "1967",
+    "reference_value": "1966",
+    "source": "https://www.spaghetti-western.net/index.php/Yankee",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1966"
+  },
+  {
+    "movie_id": 267,
+    "movie_title": "Yankee",
+    "movie_year": "1967",
+    "field": "director",
+    "our_value": "Tinto Brass",
+    "reference_value": "Not found in SWDb people: ['Adolfo Celi', 'Alvaro de Luna', 'Antonio Basile', 'Antonio Ponciano', 'Barcelona']",
+    "source": "https://www.spaghetti-western.net/index.php/Yankee",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 267,
+    "movie_title": "Yankee",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Tomás Torres",
+      "Paco Sanz",
+      "Victor Israel"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Yankee",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 270,
+    "movie_title": "Zorro",
+    "movie_year": "1974",
+    "field": "year",
+    "our_value": "1974",
+    "reference_value": "1975",
+    "source": "https://www.spaghetti-western.net/index.php/Zorro",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1975"
+  },
+  {
+    "movie_id": 270,
+    "movie_title": "Zorro",
+    "movie_year": "1974",
+    "field": "co_stars",
+    "our_value": [
+      "Adriana Asti",
+      "Giacomo Rossi Stuart",
+      "Ottavia Piccolò",
+      "Moustache"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Zorro",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 274,
+    "movie_title": "Bad Man's River",
+    "movie_year": "1971",
+    "field": "co_stars",
+    "our_value": [
+      "James Mason",
+      "Eduardo Fajardo",
+      "José M. Martin"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Bad_Man%27s_River",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 277,
+    "movie_title": "Bandidos",
+    "movie_year": "1967",
+    "field": "director",
+    "our_value": "Massimo Dallamano (as Max Dillman)",
+    "reference_value": "Not found in SWDb people: ['Alberigo Donadeo', 'Amerigo Santarelli', 'Antonio Pica', 'Aysanoa Runachagua', 'Calogero Azzaretto']",
+    "source": "https://www.spaghetti-western.net/index.php/Bandidos",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 277,
+    "movie_title": "Bandidos",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Terry Jenkins",
+      "Luigi Pistilli"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Bandidos",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 283,
+    "movie_title": "Ben and Charlie",
+    "movie_year": "1970",
+    "field": "year",
+    "our_value": "1970",
+    "reference_value": "1972",
+    "source": "https://www.spaghetti-western.net/index.php/Amico,_stammi_lontano_almeno_un_palmo",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1972"
+  },
+  {
+    "movie_id": 283,
+    "movie_title": "Ben and Charlie",
+    "movie_year": "1970",
+    "field": "co_stars",
+    "our_value": [
+      "Giacomo Rossi Stuart"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Amico,_stammi_lontano_almeno_un_palmo",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 287,
+    "movie_title": "Big Ripoff",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Franco Giornelli"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Desperado,_El",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 291,
+    "movie_title": "Black Jack",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Federico Chentres"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Black_Jack",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 292,
+    "movie_title": "Black Killer",
+    "movie_year": "1971",
+    "field": "co_stars",
+    "our_value": [
+      "Marina Mulligan",
+      "Paul Craine"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Black_Killer",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 293,
+    "movie_title": "Black Tigress",
+    "movie_year": "1967",
+    "field": "director",
+    "our_value": "Siro Marcellini",
+    "reference_value": "Not found in SWDb people: ['Antonio Marcolini', 'Augusta Di Vincenzi', 'Dada Gallotti', 'Enzo Santaniello', 'Erna Schürer']",
+    "source": "https://www.spaghetti-western.net/index.php/Lola_Colt",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 293,
+    "movie_title": "Black Tigress",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "German Cobos",
+      "Franco Balducci",
+      "Andrea Scotti"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Lola_Colt",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 294,
+    "movie_title": "Blindman",
+    "movie_year": "1971",
+    "field": "co_stars",
+    "our_value": [
+      "Ringo Starr",
+      "David Dreyer",
+      "Lucretia Love"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Blindman",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 299,
+    "movie_title": "Blood for a Silver Dollar",
+    "movie_year": "1965",
+    "field": "co_stars",
+    "our_value": [
+      "Evelyn Stewart",
+      "Peter Cross",
+      "Andrew Scott",
+      "Max Dean"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Dollaro_bucato,_Un",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 315,
+    "movie_title": "California",
+    "movie_year": "1976",
+    "field": "year",
+    "our_value": "1976",
+    "reference_value": "1977",
+    "source": "https://www.spaghetti-western.net/index.php/California",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1977"
+  },
+  {
+    "movie_id": 315,
+    "movie_title": "California",
+    "movie_year": "1976",
+    "field": "co_stars",
+    "our_value": [
+      "Paola Bosè"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/California",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 317,
+    "movie_title": "Captain Apache",
+    "movie_year": "1971",
+    "field": "director",
+    "our_value": "Alexander Singer",
+    "reference_value": "Not found in SWDb people: ['Agustín Bescos', 'Antonio Padilla', 'Bruce M. Fischer', 'Carl Rapp', 'Carlos Bravo']",
+    "source": "https://www.spaghetti-western.net/index.php/Captain_Apache",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 317,
+    "movie_title": "Captain Apache",
+    "movie_year": "1971",
+    "field": "co_stars",
+    "our_value": [
+      "Carroll Baker",
+      "Stuart Whitman",
+      "Elisa Montes",
+      "Charlie Bravo"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Captain_Apache",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 318,
+    "movie_title": "Carambola",
+    "movie_year": "1974",
+    "field": "lead_actor",
+    "our_value": "Paul Smith",
+    "reference_value": "Not found in SWDb people: ['Angelo Boscariol', 'Angelo Susani', 'Antonio Cantafora', 'Artemio Antonini', 'Bixio, Frizzi & Tempera', 'Carla Mancini', 'Claudio Ruffini', 'Comedy']",
+    "source": "https://www.spaghetti-western.net/index.php/Carambola",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 318,
+    "movie_title": "Carambola",
+    "movie_year": "1974",
+    "field": "co_stars",
+    "our_value": [
+      "Michael Coby (Antonio Cantafora)",
+      "William Bogart"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Carambola",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 324,
+    "movie_title": "Charley One-Eye",
+    "movie_year": "1972",
+    "field": "year",
+    "our_value": "1972",
+    "reference_value": "1973",
+    "source": "https://www.spaghetti-western.net/index.php/Charley_One-Eye",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1973"
+  },
+  {
+    "movie_id": 324,
+    "movie_title": "Charley One-Eye",
+    "movie_year": "1972",
+    "field": "director",
+    "our_value": "Don Chaffey",
+    "reference_value": "Not found in SWDb people: ['Aldo Sambrell', 'John Cameron', 'Rafael Albaicín', 'USA', 'United Kingdom']",
+    "source": "https://www.spaghetti-western.net/index.php/Charley_One-Eye",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 324,
+    "movie_title": "Charley One-Eye",
+    "movie_year": "1972",
+    "field": "lead_actor",
+    "our_value": "Richard Roundtree",
+    "reference_value": "Not found in SWDb people: ['Aldo Sambrell', 'John Cameron', 'Rafael Albaicín', 'USA', 'United Kingdom']",
+    "source": "https://www.spaghetti-western.net/index.php/Charley_One-Eye",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 324,
+    "movie_title": "Charley One-Eye",
+    "movie_year": "1972",
+    "field": "co_stars",
+    "our_value": [
+      "Roy Thinnes",
+      "Nigel Davenport",
+      "Jill Pearson",
+      "Luis Aller"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Charley_One-Eye",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 332,
+    "movie_title": "Cipolla Colt",
+    "movie_year": "1975",
+    "field": "co_stars",
+    "our_value": [
+      "Martin Balsam",
+      "Sterling Hayden",
+      "Dick Butkus"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Cipolla_Colt",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 333,
+    "movie_title": "Cisco",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Cristina Gajoni"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/El_Cisco",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 334,
+    "movie_title": "Cjamango",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Pedro Sanchez"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Cjamango",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 337,
+    "movie_title": "Colorado Charlie",
+    "movie_year": "1965",
+    "field": "co_stars",
+    "our_value": [
+      "Charlie Lawrence",
+      "Barbara Hudson",
+      "Luis Chavarro",
+      "Andrew Ray"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Colorado_Charlie",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 342,
+    "movie_title": "Comin' at Ya!",
+    "movie_year": "1981",
+    "field": "co_stars",
+    "our_value": [
+      "Victoria Abril",
+      "Gene Quintana",
+      "Lewis Gordon"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Comin%27_at_Ya!",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 351,
+    "movie_title": "Day of Anger",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Crista Linder",
+      "Piero Lulli"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Giorni_dell%27ira,_I",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 353,
+    "movie_title": "Dead Are Countless",
+    "movie_year": "1969",
+    "field": "co_stars",
+    "our_value": [
+      "José Bodalo",
+      "Luis Barboo",
+      "Raf Baldassare"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Garringo",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 355,
+    "movie_title": "Dead Men Ride",
+    "movie_year": "1970",
+    "field": "year",
+    "our_value": "1970",
+    "reference_value": "1971",
+    "source": "https://en.wikipedia.org/wiki/Dead_Men_Ride",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Dead Men Ride ; Directed by, Aldo Florio ; Cinematography, Emilio Foriscot ; Music by, Bruno Nicolai ; Release date. 197'"
+  },
+  {
+    "movie_id": 356,
+    "movie_title": "Deadlock",
+    "movie_year": "1970",
+    "field": "director",
+    "our_value": "Roland Klick",
+    "reference_value": "Not found in SWDb people: ['Anthony Dawson', 'Germany', 'Mario Adorf']",
+    "source": "https://www.spaghetti-western.net/index.php/Deadlock",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 356,
+    "movie_title": "Deadlock",
+    "movie_year": "1970",
+    "field": "co_stars",
+    "our_value": [
+      "Marquard Bohm",
+      "Mascha Elm-Rabben",
+      "Sigurd Fitzek",
+      "Betty Segal"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Deadlock",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 364,
+    "movie_title": "Death Rides a Horse",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "William Bogart"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Da_uomo_a_uomo",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 373,
+    "movie_title": "Django",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Eduardo Fajardo",
+      "Jimmy Douglas",
+      "José Bodalo"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Django",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 379,
+    "movie_title": "Django Kills Softly",
+    "movie_year": "1968",
+    "field": "year",
+    "our_value": "1968",
+    "reference_value": "1967",
+    "source": "https://www.spaghetti-western.net/index.php/Bill_il_taciturno",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1967"
+  },
+  {
+    "movie_id": 379,
+    "movie_title": "Django Kills Softly",
+    "movie_year": "1968",
+    "field": "director",
+    "our_value": "Massimo Pupillo (as Max Hunter)",
+    "reference_value": "Not found in SWDb people: ['Alberigo Donadeo', 'Altiero Di Giovanni', 'Berto Pisano', 'Claudio Biava', 'Clemente Ukmar']",
+    "source": "https://www.spaghetti-western.net/index.php/Bill_il_taciturno",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 379,
+    "movie_title": "Django Kills Softly",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Edwin G. Ross",
+      "Liana Orfei",
+      "Mimmo Maggio",
+      "Peter Hellmann"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Bill_il_taciturno",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 384,
+    "movie_title": "Djurado",
+    "movie_year": "1966",
+    "field": "director",
+    "our_value": "Gianni Narzisi",
+    "reference_value": "Not found in SWDb people: ['Alberto Venturi', 'Bruno Degni', 'Calogero Azzaretto', 'Dante Posani', 'Enrico Chiappafreddo']",
+    "source": "https://www.spaghetti-western.net/index.php/Djurado",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 384,
+    "movie_title": "Djurado",
+    "movie_year": "1966",
+    "field": "lead_actor",
+    "our_value": "Montgomery Clark",
+    "reference_value": "Not found in SWDb people: ['Alberto Venturi', 'Bruno Degni', 'Calogero Azzaretto', 'Dante Posani', 'Enrico Chiappafreddo', 'Federico Boido', 'Federico De Urrutia', 'Fortunato Arena']",
+    "source": "https://www.spaghetti-western.net/index.php/Djurado",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 384,
+    "movie_title": "Djurado",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Mary Jordan",
+      "Luis Induñi"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Djurado",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 392,
+    "movie_title": "Duel at Sundown",
+    "movie_year": "1965",
+    "field": "director",
+    "our_value": "Leopoldo Lahola",
+    "reference_value": "Not found in SWDb people: ['Carl Lange', 'Demeter Bitenc', 'Germany', 'Giacomo Rossi-Stuart', 'Jan Hendriks']",
+    "source": "https://www.spaghetti-western.net/index.php/Duell_vor_Sonnenuntergang",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 392,
+    "movie_title": "Duel at Sundown",
+    "movie_year": "1965",
+    "field": "co_stars",
+    "our_value": [
+      "Carole Gray",
+      "Mario Girotti (Terence Hill)"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Duell_vor_Sonnenuntergang",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 396,
+    "movie_title": "Dynamite Jack",
+    "movie_year": "1963",
+    "field": "year",
+    "our_value": "1963",
+    "reference_value": "1961",
+    "source": "https://www.spaghetti-western.net/index.php/Dynamite_Jack",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1961"
+  },
+  {
+    "movie_id": 396,
+    "movie_title": "Dynamite Jack",
+    "movie_year": "1963",
+    "field": "director",
+    "our_value": "Jean Bastia",
+    "reference_value": "Not found in SWDb people: [\"Donald O'Brien\", 'Georges Lycan', 'Jean-Pierre Landreau', 'Jess Hahn', 'Pascal Bastia']",
+    "source": "https://www.spaghetti-western.net/index.php/Dynamite_Jack",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 396,
+    "movie_title": "Dynamite Jack",
+    "movie_year": "1963",
+    "field": "lead_actor",
+    "our_value": "Fernandel",
+    "reference_value": "Not found in SWDb people: [\"Donald O'Brien\", 'Georges Lycan', 'Jean-Pierre Landreau', 'Jess Hahn', 'Pascal Bastia', 'Todd Martin']",
+    "source": "https://www.spaghetti-western.net/index.php/Dynamite_Jack",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 396,
+    "movie_title": "Dynamite Jack",
+    "movie_year": "1963",
+    "field": "co_stars",
+    "our_value": [
+      "Eleonore Vargas",
+      "Adrienne Corri",
+      "Daniel Ivernel",
+      "Lucien Raimbourg"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Dynamite_Jack",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 397,
+    "movie_title": "Dynamite Jim",
+    "movie_year": "1966",
+    "field": "director",
+    "our_value": "Alfonso Balcazar",
+    "reference_value": "Not found in SWDb people: ['Adalberto Rossetti', 'Alberto Gadea', 'Aldo Sambrell', 'Alfonso Balcázar', 'Fernando Sancho']",
+    "source": "https://www.spaghetti-western.net/index.php/Dinamite_Jim",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 397,
+    "movie_title": "Dynamite Jim",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Mary Conte",
+      "Charles Sola"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Dinamite_Jim",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 399,
+    "movie_title": "Eagle's Wing",
+    "movie_year": "1980",
+    "field": "year",
+    "our_value": "1980",
+    "reference_value": "1979",
+    "source": "https://www.spaghetti-western.net/index.php/Eagle%27s_Wing",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1979"
+  },
+  {
+    "movie_id": 399,
+    "movie_title": "Eagle's Wing",
+    "movie_year": "1980",
+    "field": "director",
+    "our_value": "Anthony Harvey",
+    "reference_value": "Not found in SWDb people: ['Claudio Brook', 'Enrique Lucero', 'Harvey Keitel', 'Jorge Luke', 'Jorge Russek']",
+    "source": "https://www.spaghetti-western.net/index.php/Eagle%27s_Wing",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 399,
+    "movie_title": "Eagle's Wing",
+    "movie_year": "1980",
+    "field": "lead_actor",
+    "our_value": "Martin Sheen",
+    "reference_value": "Not found in SWDb people: ['Claudio Brook', 'Enrique Lucero', 'Harvey Keitel', 'Jorge Luke', 'Jorge Russek', 'Marc Wilkinson', 'United Kingdom']",
+    "source": "https://www.spaghetti-western.net/index.php/Eagle%27s_Wing",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 399,
+    "movie_title": "Eagle's Wing",
+    "movie_year": "1980",
+    "field": "co_stars",
+    "our_value": [
+      "Sam Waterston",
+      "Stephane Audran",
+      "José Carlos Ruiz",
+      "Manuel Ojeda"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Eagle%27s_Wing",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 401,
+    "movie_title": "Execution",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Rita Clein",
+      "Franco Giornelli",
+      "Nestor Garay"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Execution",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 411,
+    "movie_title": "Finger on the Trigger",
+    "movie_year": "1965",
+    "field": "director",
+    "our_value": "Sidney Pink",
+    "reference_value": "Not found in SWDb people: ['Antonio Macasoli', 'Antonio Molino Rojo', 'Beni Deus', 'Fernando Bilbao', 'George Rigaud']",
+    "source": "https://www.spaghetti-western.net/index.php/Finger_on_the_Trigger",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 411,
+    "movie_title": "Finger on the Trigger",
+    "movie_year": "1965",
+    "field": "lead_actor",
+    "our_value": "Rory Calhoun",
+    "reference_value": "Not found in SWDb people: ['Antonio Macasoli', 'Antonio Molino Rojo', 'Beni Deus', 'Fernando Bilbao', 'George Rigaud', 'James Philbrook', 'Juan Antonio Peral', 'Leo Anchóriz']",
+    "source": "https://www.spaghetti-western.net/index.php/Finger_on_the_Trigger",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 411,
+    "movie_title": "Finger on the Trigger",
+    "movie_year": "1965",
+    "field": "co_stars",
+    "our_value": [
+      "Aldo Sambrell",
+      "Leo Anchoriz",
+      "Jorge Rigaud"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Finger_on_the_Trigger",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 413,
+    "movie_title": "Fistful of Dollars",
+    "movie_year": "1964",
+    "field": "co_stars",
+    "our_value": [
+      "Sieghart Rupp"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Per_un_pugno_di_dollari",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 427,
+    "movie_title": "Fort Yuma Gold",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Sophie Daumier",
+      "Jacques Sernas"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Per_pochi_dollari_ancora",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 432,
+    "movie_title": "Four Rode Out",
+    "movie_year": "1969",
+    "field": "director",
+    "our_value": "John Peyser",
+    "reference_value": "Not found in SWDb people: ['Albert Salmi', 'Janis Ian', 'Janis Ian (Singer)', 'John Clark', 'Julián Mateos']",
+    "source": "https://www.spaghetti-western.net/index.php/Four_Rode_Out",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 432,
+    "movie_title": "Four Rode Out",
+    "movie_year": "1969",
+    "field": "lead_actor",
+    "our_value": "Pernell Roberts",
+    "reference_value": "Not found in SWDb people: ['Albert Salmi', 'Janis Ian', 'Janis Ian (Singer)', 'John Clark', 'Julián Mateos', 'María Martín', 'Rafael Pacheco', 'USA']",
+    "source": "https://www.spaghetti-western.net/index.php/Four_Rode_Out",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 432,
+    "movie_title": "Four Rode Out",
+    "movie_year": "1969",
+    "field": "co_stars",
+    "our_value": [
+      "Leslie Nielsen",
+      "Sue Lyon",
+      "Julian Mateos",
+      "Maria Martin"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Four_Rode_Out",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 436,
+    "movie_title": "Garter Colt",
+    "movie_year": "1967",
+    "field": "year",
+    "our_value": "1967",
+    "reference_value": "1968",
+    "source": "https://www.spaghetti-western.net/index.php/Giarrettiera_Colt",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1968"
+  },
+  {
+    "movie_id": 436,
+    "movie_title": "Garter Colt",
+    "movie_year": "1967",
+    "field": "director",
+    "our_value": "Gian Andrea Rocco",
+    "reference_value": "Not found in SWDb people: ['Arnaldo Fabrizio', 'Claudio Camaso', 'Elvira Cortese', 'Franco Scala', 'Gaetano Scala']",
+    "source": "https://www.spaghetti-western.net/index.php/Giarrettiera_Colt",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 436,
+    "movie_title": "Garter Colt",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Marisa Solinas",
+      "Jasper Zola"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Giarrettiera_Colt",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 439,
+    "movie_title": "Get Mean",
+    "movie_year": "1975",
+    "field": "co_stars",
+    "our_value": [
+      "Raf Baldassare",
+      "Diana Loris",
+      "David Dreyer",
+      "Mirta Miller"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Get_Mean",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 440,
+    "movie_title": "Get the Coffin Ready",
+    "movie_year": "1968",
+    "field": "year",
+    "our_value": "1968",
+    "reference_value": "1967",
+    "source": "https://www.youtube.com/watch?v=0mz54T1mfKg",
+    "confidence": "medium",
+    "note": "Year from web search description: '... Get the Coffin Ready Filming Locations: Elios Film, Rome, Lazio, Italy Storyline ... (1967) | Full Spaghetti Western'"
+  },
+  {
+    "movie_id": 444,
+    "movie_title": "Go with God, Gringo",
+    "movie_year": "1966",
+    "field": "lead_actor",
+    "our_value": "Glenn Saxon",
+    "reference_value": "Not found in SWDb people: ['Aldo Berti', 'Dino Strano', 'Edoardo Mulargia', 'Glenn Saxson', 'Ignazio Spalla', 'Livio Lorenzon', 'Lucretia Love', 'Reviews']",
+    "source": "https://www.spaghetti-western.net/index.php/Go_with_God,_Gringo",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 444,
+    "movie_title": "Go with God, Gringo",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Armando Guarnieri",
+      "Pasquale Simeoli"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Go_with_God,_Gringo",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 460,
+    "movie_title": "Gunfight at Red Sands",
+    "movie_year": "1963",
+    "field": "co_stars",
+    "our_value": [
+      "Giacomo Rossi Stuart",
+      "Daniel Martin",
+      "Barta Barry"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Duello_nel_Texas",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 461,
+    "movie_title": "Gunfighters of Casa Grande",
+    "movie_year": "1965",
+    "field": "year",
+    "our_value": "1965",
+    "reference_value": "1964",
+    "source": "https://www.spaghetti-western.net/index.php/Gunfighters_of_Casa_Grande",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1964"
+  },
+  {
+    "movie_id": 461,
+    "movie_title": "Gunfighters of Casa Grande",
+    "movie_year": "1965",
+    "field": "director",
+    "our_value": "Roy Rowland",
+    "reference_value": "Not found in SWDb people: ['Agustín Bescos', 'Aldo Sambrell', 'Alex Nicol', 'Antonio Fuentes', 'Antonio Mayans']",
+    "source": "https://www.spaghetti-western.net/index.php/Gunfighters_of_Casa_Grande",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 461,
+    "movie_title": "Gunfighters of Casa Grande",
+    "movie_year": "1965",
+    "field": "co_stars",
+    "our_value": [
+      "Jorge Mistral",
+      "Steve Rowland",
+      "Dick Bentley"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Gunfighters_of_Casa_Grande",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 464,
+    "movie_title": "Gunmen of Rio Grande",
+    "movie_year": "1964",
+    "field": "director",
+    "our_value": "Tullio Demichelli",
+    "reference_value": "Not found in SWDb people: ['Alfredo Venturi', 'Alvaro de Luna', 'Angelo Casadei', 'Angelo Francesco Lavagnino', 'Augusto Brenna']",
+    "source": "https://www.spaghetti-western.net/index.php/Sfida_a_Rio_Bravo",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 464,
+    "movie_title": "Gunmen of Rio Grande",
+    "movie_year": "1964",
+    "field": "co_stars",
+    "our_value": [
+      "Gerard Tichy",
+      "Carolyn Davys"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Sfida_a_Rio_Bravo",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 466,
+    "movie_title": "Half Breed",
+    "movie_year": "1966",
+    "field": "director",
+    "our_value": "Harald Philipp",
+    "reference_value": "Not found in SWDb people: ['Branko Špoljar', 'Germany', 'Giancarlo Bastianoni', 'Götz George', 'Karl May']",
+    "source": "https://www.spaghetti-western.net/index.php/Winnetou_und_das_Halbblut_Apanatschi",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 466,
+    "movie_title": "Half Breed",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Ursula Glass"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Winnetou_und_das_Halbblut_Apanatschi",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 471,
+    "movie_title": "Hannie Caulder",
+    "movie_year": "1971",
+    "field": "co_stars",
+    "our_value": [
+      "Robert Culp",
+      "Christopher Lee",
+      "Strother Martin"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Hannie_Caulder",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 474,
+    "movie_title": "Hatred of God",
+    "movie_year": "1967",
+    "field": "year",
+    "our_value": "1967",
+    "reference_value": "1969",
+    "source": "https://suggap.com/movie/OTYyZGQ2NW/hate-is-my-god",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Hate Is My God (, , also known as Hatred of God) is a 1969 Italian-West German Spaghetti Western film directed by Claudi'"
+  },
+  {
+    "movie_id": 479,
+    "movie_title": "Hellbenders",
+    "movie_year": "1966",
+    "field": "year",
+    "our_value": "1966",
+    "reference_value": "1967",
+    "source": "https://www.spaghetti-western.net/index.php/Crudeli,_I",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1967"
+  },
+  {
+    "movie_id": 479,
+    "movie_title": "Hellbenders",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Norma Benguel",
+      "Julian Mateos"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Crudeli,_I",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 489,
+    "movie_title": "Holy Water Joe",
+    "movie_year": "1971",
+    "field": "co_stars",
+    "our_value": [
+      "Silvia Monelli",
+      "Lee Banner",
+      "Anthony Freeman"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Acquasanta_Joe",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 496,
+    "movie_title": "I Want Him Dead",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "José Manuel Martin",
+      "Licia Calderon",
+      "Cristina Businari"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Lo_voglio_morto",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 511,
+    "movie_title": "Johnny Colt",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Jane Tilden"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Starblack",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 512,
+    "movie_title": "Johnny Hamlet",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Gabriella Grimaldi",
+      "Pedro Sanchez"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Quella_sporca_storia_nel_west",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 513,
+    "movie_title": "Johnny Yuma",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Fidel Gonzales"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Johnny_Yuma",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 515,
+    "movie_title": "Keoma",
+    "movie_year": "1975",
+    "field": "year",
+    "our_value": "1975",
+    "reference_value": "1976",
+    "source": "https://www.spaghetti-western.net/index.php/Keoma",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1976"
+  },
+  {
+    "movie_id": 515,
+    "movie_title": "Keoma",
+    "movie_year": "1975",
+    "field": "co_stars",
+    "our_value": [
+      "Ken Wood (Giovanni Cianfriglia)"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Keoma",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 516,
+    "movie_title": "Kid Rodelo",
+    "movie_year": "1966",
+    "field": "director",
+    "our_value": "Richard Carlson",
+    "reference_value": "Not found in SWDb people: ['Alvaro de Luna', 'Broderick Crawford', 'Don Murray', 'Eduardo Manzanos Brochero', 'Emilio Rodríguez']",
+    "source": "https://www.spaghetti-western.net/index.php/Kid_Rodelo",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 516,
+    "movie_title": "Kid Rodelo",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Janet Leigh",
+      "Richard Carlson"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Kid_Rodelo",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 517,
+    "movie_title": "Kid Vengeance",
+    "movie_year": "1976",
+    "field": "director",
+    "our_value": "Joe Manduke",
+    "reference_value": "Not found in SWDb people: ['Israel', 'Jim Brown', 'Lee Van Cleef', 'Timothy Scott', 'USA']",
+    "source": "https://www.spaghetti-western.net/index.php/Kid_Vengeance",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 517,
+    "movie_title": "Kid Vengeance",
+    "movie_year": "1976",
+    "field": "lead_actor",
+    "our_value": "Leif Garrett",
+    "reference_value": "Not found in SWDb people: ['Israel', 'Jim Brown', 'Lee Van Cleef', 'Timothy Scott', 'USA']",
+    "source": "https://www.spaghetti-western.net/index.php/Kid_Vengeance",
+    "confidence": "low",
+    "note": "Lead actor name not found in SWDb categories."
+  },
+  {
+    "movie_id": 517,
+    "movie_title": "Kid Vengeance",
+    "movie_year": "1976",
+    "field": "co_stars",
+    "our_value": [
+      "Glynnis O'Connor",
+      "John Marley",
+      "Matt Clark"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Kid_Vengeance",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 519,
+    "movie_title": "Kill Johnny Ringo",
+    "movie_year": "1966",
+    "field": "co_stars",
+    "our_value": [
+      "Ray Scott",
+      "Lee Burton",
+      "William Bogart",
+      "James Harrison"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Uccidete_Johnny_Ringo",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 524,
+    "movie_title": "Killer Goodbye",
+    "movie_year": "1969",
+    "field": "year",
+    "our_value": "1969",
+    "reference_value": "1972",
+    "source": "https://www.imdb.com/list/ls070708017/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'José Jaspe was born on 10 August 1906 in A Coruña, Galicia, Spain. He was an actor, known for Horror Express (1972), Kil'"
+  },
+  {
+    "movie_id": 525,
+    "movie_title": "Killer Kid",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Liz Barret",
+      "Ken Wood (Giovanni Cianfriglia)",
+      "Adriano Vitale"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Killer_Kid",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 528,
+    "movie_title": "Land Raiders",
+    "movie_year": "1969",
+    "field": "director",
+    "our_value": "Nathan Juran",
+    "reference_value": "Not found in SWDb people: ['Agustín Bescos', 'Ben Tatar', 'Bruno Nicolai', 'Carlos Bravo', 'Charles Stalmaker']",
+    "source": "https://www.spaghetti-western.net/index.php/Land_Raiders",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 528,
+    "movie_title": "Land Raiders",
+    "movie_year": "1969",
+    "field": "co_stars",
+    "our_value": [
+      "George Maharis",
+      "Arlene Dahl",
+      "Janet Landgard",
+      "Jocelyn Lane",
+      "Peter Dane"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Land_Raiders",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 538,
+    "movie_title": "Let Them Rest",
+    "movie_year": "1967",
+    "field": "co_stars",
+    "our_value": [
+      "Rossana Martini"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Requiescant",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 546,
+    "movie_title": "Machine Gun Killers",
+    "movie_year": "1968",
+    "field": "co_stars",
+    "our_value": [
+      "Evelyn Stewart",
+      "George Rigaud"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Quel_caldo_maledetto_giorno_di_fuoco",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 554,
+    "movie_title": "Man: His Pride and His Vengeance",
+    "movie_year": "1967",
+    "field": "year",
+    "our_value": "1967",
+    "reference_value": "2021",
+    "source": "https://onceuponatimeinawestern.com/man-pride-and-vengeance-1967/",
+    "confidence": "medium",
+    "note": "Year from web search description: 'Rating 5.0(2)Jul 14, 2021 · ... (1967). Rate this movie on film's main page. Pin It. Tags:A Man His Pride and His Vengea'"
+  },
+  {
+    "movie_id": 557,
+    "movie_title": "Man Called Blade",
+    "movie_year": "1977",
+    "field": "co_stars",
+    "our_value": [
+      "Martine Brochard"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Mannaja",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 558,
+    "movie_title": "Man Called Django",
+    "movie_year": "1971",
+    "field": "co_stars",
+    "our_value": [
+      "Clauco Onorato",
+      "Simone Blondell"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/W_Django!",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  },
+  {
+    "movie_id": 559,
+    "movie_title": "Man Called Gringo",
+    "movie_year": "1964",
+    "field": "year",
+    "our_value": "1964",
+    "reference_value": "1965",
+    "source": "https://www.spaghetti-western.net/index.php/Sie_nannten_ihn_Gringo",
+    "confidence": "high",
+    "note": "SWDb categorises this film under 1965"
+  },
+  {
+    "movie_id": 559,
+    "movie_title": "Man Called Gringo",
+    "movie_year": "1964",
+    "field": "director",
+    "our_value": "Roy Rowland",
+    "reference_value": "Not found in SWDb people: ['Daniel Martín', 'Franco Lantieri', 'Germany', 'Götz George', 'Heinz Gietz']",
+    "source": "https://www.spaghetti-western.net/index.php/Sie_nannten_ihn_Gringo",
+    "confidence": "low",
+    "note": "Director name not found in SWDb categories. Could be a name spelling error."
+  },
+  {
+    "movie_id": 559,
+    "movie_title": "Man Called Gringo",
+    "movie_year": "1964",
+    "field": "co_stars",
+    "our_value": [
+      "Alexandra Stewart",
+      "Helmut Schmidt",
+      "Dan Martin"
+    ],
+    "reference_value": "Some co-stars not found in SWDb",
+    "source": "https://www.spaghetti-western.net/index.php/Sie_nannten_ihn_Gringo",
+    "confidence": "low",
+    "note": "These co-stars were not found in SWDb categories (may just be uncatalogued)."
+  }
+]
