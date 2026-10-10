@@ -592,19 +592,46 @@ export default {{
         `$1\\n  ${{filmSchemaJson}}\\n  $2`
       );
 
-      const noscriptBlock = `
-  <!-- SEO: Pre-rendered film content for no-JS crawlers -->
-  <noscript>
-    <div style="padding:2rem;max-width:800px;margin:0 auto;font-family:Georgia,serif;">
-      <h1>${{esc(film.t)}} (${{esc(film.y)}})</h1>
-      <p><strong>Director:</strong> ${{esc(film.d)}}</p>
-      <p><strong>Starring:</strong> ${{esc(film.a)}}</p>
-      <p><strong>Music:</strong> ${{esc(film.mu)}}</p>
-      <p>${{esc(film.s)}}</p>
-    </div>
-  </noscript>`;
+      // SSR content block: visible immediately in HTTP response for Googlebot.
+      // JS hides this once the SPA has rendered the film card (avoids content flash for users).
+      const ssrBlock = `
+  <!-- SSR: Pre-rendered film content injected by Cloudflare Worker for Googlebot -->
+  <article id="ssr-film-card" itemscope itemtype="https://schema.org/Movie" style="max-width:860px;margin:2rem auto;padding:1.5rem 2rem;font-family:Georgia,serif;background:#1c1410;border:1px solid #5e3a28;border-radius:8px;color:#e8d5b0;">
+    <p style="font-size:0.75rem;letter-spacing:0.12em;color:#9e6b4a;margin-bottom:0.5rem;text-transform:uppercase;">Spaghetti Western Discovery — Vault Entry</p>
+    <h1 itemprop="name" style="font-size:1.8rem;color:#e8c97a;margin:0 0 0.25rem;">${{esc(film.t)}}</h1>
+    <p style="color:#9e6b4a;margin:0 0 1.2rem;font-size:1rem;">(${{esc(film.y)}}) &mdash; Spaghetti Western</p>
+    <dl style="display:grid;grid-template-columns:auto 1fr;gap:0.4rem 1rem;font-size:0.95rem;margin-bottom:1.2rem;">
+      <dt style="color:#9e6b4a;font-weight:700;">Director</dt>
+      <dd itemprop="director" itemscope itemtype="https://schema.org/Person" style="margin:0;color:#e8d5b0;"><span itemprop="name">${{esc(film.d)}}</span></dd>
+      <dt style="color:#9e6b4a;font-weight:700;">Starring</dt>
+      <dd itemprop="actor" itemscope itemtype="https://schema.org/Person" style="margin:0;color:#e8d5b0;"><span itemprop="name">${{esc(film.a)}}</span></dd>
+      <dt style="color:#9e6b4a;font-weight:700;">Music</dt>
+      <dd itemprop="musicBy" itemscope itemtype="https://schema.org/Person" style="margin:0;color:#e8d5b0;"><span itemprop="name">${{esc(film.mu)}}</span></dd>
+      <dt style="color:#9e6b4a;font-weight:700;">Genre</dt>
+      <dd style="margin:0;color:#e8d5b0;">Spaghetti Western / Euro-Western</dd>
+    </dl>
+    <p itemprop="description" style="color:#d4b896;line-height:1.7;font-size:0.97rem;">${{esc(film.s)}}</p>
+    <p style="margin-top:1.2rem;font-size:0.85rem;color:#7a5a3a;">
+      <a href="/" style="color:#c0392b;">&#8592; Return to the Discovery Engine</a>
+      &nbsp;&bull;&nbsp;
+      <a href="/archive.html" style="color:#c0392b;">Browse A&ndash;Z Archive</a>
+    </p>
+  </article>
+  <script>
+    (function() {{
+      function hideSSR() {{
+        var el = document.getElementById('ssr-film-card');
+        if (el) el.style.display = 'none';
+      }}
+      if (document.readyState === 'loading') {{
+        document.addEventListener('DOMContentLoaded', function() {{ setTimeout(hideSSR, 800); }});
+      }} else {{
+        setTimeout(hideSSR, 800);
+      }}
+    }})();
+  </script>`;
 
-      html = html.replace("</body>", `${{noscriptBlock}}\\n</body>`);
+      html = html.replace("</body>", `${{ssrBlock}}\\n</body>`);
 
       return new Response(html, {{
         status: 200,
