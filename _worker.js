@@ -81,7 +81,7 @@ function build404Html(slug) {
   <title>Film Not Found — ${SITE_NAME}</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="${SITE_URL}/">
-  <link rel="stylesheet" href="${SITE_URL}/style.css?v=2.1">
+  <link rel="stylesheet" href="${SITE_URL}/style.css?v=2.2">
 </head>
 <body>
   <main style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60vh;text-align:center;padding:2rem;font-family:Georgia,serif;">

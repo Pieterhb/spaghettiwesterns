@@ -167,7 +167,7 @@ def generate_archive_html(movies: list, output_file: str = "archive.html"):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Lora:ital,wght@0,400;0,600;1,400&family=Rye&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=2.1">
+  <link rel="stylesheet" href="style.css?v=2.2">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -494,7 +494,7 @@ function build404Html(slug) {{
   <title>Film Not Found — ${{SITE_NAME}}</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="${{SITE_URL}}/">
-  <link rel="stylesheet" href="${{SITE_URL}}/style.css?v=2.1">
+  <link rel="stylesheet" href="${{SITE_URL}}/style.css?v=2.2">
 </head>
 <body>
   <main style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60vh;text-align:center;padding:2rem;font-family:Georgia,serif;">
