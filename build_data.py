@@ -147,11 +147,12 @@ def generate_archive_html(movies: list, output_file: str = "archive.html"):
   <meta name="description" content="Browse the complete index of 560+ Spaghetti Western and Euro-Western films (1961–1977). Complete directory of directors, actors, soundtracks, and synopses.">
   <meta name="keywords" content="Spaghetti Western archive, Euro-Western filmography, Italian Western database, Sergio Leone films, Franco Nero westerns, Giuliano Gemma, Ennio Morricone scores">
   <meta name="theme-color" content="#1a1412">
-  <link rel="canonical" href="{SITE_URL}/archive.html">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{SITE_URL}/archive">
 
   <!-- OpenGraph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{SITE_URL}/archive.html">
+  <meta property="og:url" content="{SITE_URL}/archive">
   <meta property="og:title" content="Complete A–Z Spaghetti Western Film Archive (560+ Titles)">
   <meta property="og:description" content="Browse the complete crawlable directory of 560+ Italian and European Westerns from 1961 to 1977.">
   <meta property="og:image" content="{SITE_URL}/1.jpg">
@@ -175,7 +176,7 @@ def generate_archive_html(movies: list, output_file: str = "archive.html"):
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Complete A–Z Spaghetti Western Film Archive",
-    "url": "{SITE_URL}/archive.html",
+    "url": "{SITE_URL}/archive",
     "description": "Comprehensive filmography directory indexing 560+ European and Italian Western films from 1961 to 1977.",
     "about": {{
       "@type": "Thing",
@@ -248,15 +249,15 @@ def generate_archive_html(movies: list, output_file: str = "archive.html"):
       <div class="footer-links">
         <a href="/">🎲 Random Discovery Machine</a>
         <span class="divider">•</span>
-        <a href="archive.html">A–Z Complete Archive</a>
+        <a href="/archive">A–Z Complete Archive</a>
         <span class="divider">•</span>
-        <a href="about.html">About</a>
+        <a href="/about">About</a>
         <span class="divider">•</span>
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="/privacy">Privacy Policy</a>
         <span class="divider">•</span>
-        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="/terms">Terms &amp; Conditions</a>
         <span class="divider">•</span>
-        <a href="contact.html">Contact</a>
+        <a href="/contact">Contact</a>
         <span class="divider">•</span>
         <a href="https://flickfuture.com/flickfinder" target="_blank" rel="noopener noreferrer">FlickFinder Complete Search</a>
       </div>
@@ -344,51 +345,37 @@ def main():
     generate_archive_html(movies, archive_file)
 
     # Generate sitemap.xml for SEO
+    # Ensure it only lists high-value, canonical URLs returning HTTP status 200 OK.
+    # Exclude redirected, 404, parameterized, or non-canonical URLs.
     today = datetime.now().strftime("%Y-%m-%d")
     sitemap_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
     ]
 
-    # Home page
-    sitemap_lines.append(f"""  <url>
-    <loc>{SITE_URL}/</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>""")
+    canonical_pages = [
+        ("/", "weekly", "1.0"),
+        ("/archive", "weekly", "0.9"),
+        ("/about", "monthly", "0.7"),
+        ("/contact", "monthly", "0.7"),
+        ("/privacy", "monthly", "0.5"),
+        ("/terms", "monthly", "0.5"),
+    ]
 
-    # Archive Directory Page
-    sitemap_lines.append(f"""  <url>
-    <loc>{SITE_URL}/archive.html</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>""")
-
-    # Compliance & Trust pages
-    for page in ["about.html", "privacy.html", "terms.html", "contact.html"]:
+    for path, freq, prio in canonical_pages:
+        url = f"{SITE_URL}{path}"
         sitemap_lines.append(f"""  <url>
-    <loc>{SITE_URL}/{page}</loc>
+    <loc>{url}</loc>
     <lastmod>{today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>""")
-
-    # Deep links for each film
-    for m in movies:
-        sitemap_lines.append(f"""  <url>
-    <loc>{SITE_URL}/?film={m['slug']}</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>{freq}</changefreq>
+    <priority>{prio}</priority>
   </url>""")
 
     sitemap_lines.append("</urlset>\n")
 
     with open(sitemap_file, "w", encoding="utf-8") as f:
         f.write("\n".join(sitemap_lines))
-    print(f"Generated {sitemap_file} with {len(movies) + 6} URLs.")
+    print(f"Generated {sitemap_file} with {len(canonical_pages)} canonical 200 OK URLs.")
 
     # Generate Cloudflare Pages _worker.js for edge SSR & soft-404 handling
     generate_worker_js(movies)
@@ -397,16 +384,20 @@ def generate_worker_js(movies: list, output_file: str = "_worker.js"):
     """Generates _worker.js with embedded SSR metadata lookup for edge prerendering."""
     lookup = {}
     for m in movies:
-        synopsis = m.get("synopsis", "") or ""
-        if len(synopsis) > 155:
-            synopsis = synopsis[:152] + "..."
+        co_stars_str = ", ".join(m.get("co_stars", [])[:4]) if m.get("co_stars") else ""
+        if len(m.get("co_stars", [])) > 4:
+            co_stars_str += ", ..."
+        alt_str = " • ".join(m.get("alt_titles", [])) if m.get("alt_titles") else ""
         lookup[m["slug"]] = {
+            "id": m.get("id", 0),
             "t": m.get("title", ""),
             "y": m.get("year", ""),
             "d": m.get("director", "") or "",
             "a": m.get("lead_actor", "") or "",
-            "s": synopsis,
+            "co": co_stars_str,
+            "s": m.get("synopsis", "") or "",
             "mu": m.get("music", "") or "",
+            "alt": alt_str,
         }
 
     lookup_json = json.dumps(lookup, ensure_ascii=False, separators=(",", ":"))
@@ -415,21 +406,22 @@ def generate_worker_js(movies: list, output_file: str = "_worker.js"):
  * Cloudflare Pages Function (_worker.js)
  *
  * SEO Server-Side Rendering (SSR) for ?film=slug pages.
- * Injects per-film HTML meta tags into the initial HTTP response so
- * Googlebot receives fully rendered, film-specific metadata without
- * needing to execute JavaScript.
+ * Pre-populates per-film HTML metadata and DOM card elements into the initial
+ * HTTP response so Googlebot receives fully rendered, film-specific HTML
+ * without needing to execute JavaScript or waiting for client hydration.
  *
- * Also returns proper HTTP 404 for unknown film slugs (fixes soft-404).
+ * Eliminates empty placeholder shells (Soft 404s).
+ * Enforces clean URL 301 redirects for legacy .html paths.
+ * Returns proper HTTP 404 with X-Robots-Tag: noindex, nofollow for unknown slugs.
  *
  * Auto-generated by build_data.py — do not edit manually.
  */
 
-// Compact film metadata lookup: slug -> {{t,y,d,a,s,mu}}
+// Compact film metadata lookup: slug -> {{id,t,y,d,a,co,s,mu,alt}}
 const FILM_LOOKUP = {lookup_json};
 
 const SITE_URL = "{SITE_URL}";
 const SITE_NAME = "Spaghetti Western Discovery";
-const OG_IMAGE = `${{SITE_URL}}/1.jpg`;
 
 function esc(str) {{
   return String(str || "")
@@ -438,51 +430,6 @@ function esc(str) {{
     .replace(/'/g, "&#39;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
-}}
-
-function buildFilmHead(film, slug) {{
-  const filmUrl = `${{SITE_URL}}/?film=${{encodeURIComponent(slug)}}`;
-  const pageTitle = `${{esc(film.t)}} (${{esc(film.y)}}) - ${{SITE_NAME}}`;
-  const desc = esc(film.s || `Discover ${{film.t}} (${{film.y}}) — a Spaghetti Western directed by ${{film.d}}.`);
-  const director = esc(film.d);
-  const star = esc(film.a);
-  const music = esc(film.mu);
-
-  return `<title>${{pageTitle}}</title>
-  <meta name="description" id="meta-desc" content="${{desc}}">
-  <meta name="keywords" content="Spaghetti Western, ${{esc(film.t)}}, ${{director}}, ${{star}}, Euro Western, Italian Western, Cult Cinema">
-  <meta name="theme-color" content="#1a1412">
-  <link rel="canonical" id="meta-canonical" href="${{filmUrl}}">
-
-  <!-- OpenGraph / Facebook -->
-  <meta property="og:type" content="video.movie">
-  <meta property="og:url" id="og-url" content="${{filmUrl}}">
-  <meta property="og:title" id="og-title" content="${{pageTitle}}">
-  <meta property="og:description" id="og-desc" content="${{desc}}">
-  <meta property="og:image" content="${{OG_IMAGE}}">
-  <meta property="og:site_name" content="${{SITE_NAME}}">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" id="tw-title" content="${{pageTitle}}">
-  <meta name="twitter:description" id="tw-desc" content="${{desc}}">
-  <meta name="twitter:image" content="${{OG_IMAGE}}">
-
-  <!-- Schema.org Movie (pre-rendered for Googlebot) -->
-  <script type="application/ld+json" id="movie-schema">
-  {{
-    "@context": "https://schema.org",
-    "@type": "Movie",
-    "name": "${{esc(film.t)}}",
-    "dateCreated": "${{esc(film.y)}}",
-    "director": {{"@type": "Person", "name": "${{director}}"}},
-    "actor": [{{"@type": "Person", "name": "${{star}}"}}],
-    "musicBy": {{"@type": "Person", "name": "${{music}}"}},
-    "description": "${{desc}}",
-    "genre": ["Spaghetti Western", "Euro-Western", "Cult Cinema"],
-    "url": "${{filmUrl}}"
-  }}
-  </script>`;
 }}
 
 function build404Html(slug) {{
@@ -513,8 +460,26 @@ function build404Html(slug) {{
 export default {{
   async fetch(request, env, ctx) {{
     const url = new URL(request.url);
+
+    // 1. Clean URL 301 redirects for legacy .html paths
+    const htmlRedirects = {{
+      "/index.html": "/",
+      "/archive.html": "/archive",
+      "/about.html": "/about",
+      "/contact.html": "/contact",
+      "/privacy.html": "/privacy",
+      "/terms.html": "/terms",
+    }};
+
+    if (htmlRedirects[url.pathname]) {{
+      const targetPath = htmlRedirects[url.pathname];
+      const targetUrl = new URL(targetPath + url.search, url.origin);
+      return Response.redirect(targetUrl.toString(), 301);
+    }}
+
     const filmSlug = url.searchParams.get("film");
 
+    // 2. SSR Pre-Rendering for ?film=slug requests on root
     if (filmSlug && (url.pathname === "/" || url.pathname === "")) {{
       const film = FILM_LOOKUP[filmSlug];
 
@@ -524,7 +489,7 @@ export default {{
           headers: {{
             "Content-Type": "text/html; charset=UTF-8",
             "Cache-Control": "no-store",
-            "X-Robots-Tag": "noindex",
+            "X-Robots-Tag": "noindex, nofollow",
           }},
         }});
       }}
@@ -534,104 +499,163 @@ export default {{
 
       let html = await originalResponse.text();
 
+      const pageTitle = `${{esc(film.t)}} (${{esc(film.y)}}) - ${{SITE_NAME}}`;
+      const filmUrl = `${{SITE_URL}}/?film=${{encodeURIComponent(filmSlug)}}`;
+      const shortDesc = esc((film.s && film.s.length > 155) ? film.s.substring(0, 152) + "..." : (film.s || `Discover ${{film.t}} (${{film.y}}) — a Spaghetti Western directed by ${{film.d}}.`));
+
+      // Head Tags
       html = html.replace(
         /<title>[^<]*<\\/title>/,
-        `<title>${{esc(film.t)}} (${{esc(film.y)}}) - ${{SITE_NAME}}</title>`
+        `<title>${{pageTitle}}</title>`
       );
 
       html = html.replace(
         /(<meta name="description"[^>]*content=")[^"]*(")/,
-        `$1${{esc(film.s || `Discover ${{film.t}} (${{film.y}}) — a Spaghetti Western.`)}}"`
+        `$1${{shortDesc}}"`
       );
 
       html = html.replace(
         /(<link rel="canonical"[^>]*href=")[^"]*(")/,
-        `$1${{SITE_URL}}/?film=${{encodeURIComponent(filmSlug)}}"`
+        `$1${{filmUrl}}"`
       );
 
       html = html.replace(
         /(<meta property="og:url"[^>]*content=")[^"]*(")/,
-        `$1${{SITE_URL}}/?film=${{encodeURIComponent(filmSlug)}}"`
+        `$1${{filmUrl}}"`
       );
 
       html = html.replace(
         /(<meta property="og:title"[^>]*content=")[^"]*(")/,
-        `$1${{esc(film.t)}} (${{esc(film.y)}}) - ${{SITE_NAME}}"`
+        `$1${{pageTitle}}"`
       );
 
       html = html.replace(
         /(<meta property="og:description"[^>]*content=")[^"]*(")/,
-        `$1${{esc(film.s || '')}}"`
+        `$1${{shortDesc}}"`
       );
 
       html = html.replace(
         /(<meta name="twitter:title"[^>]*content=")[^"]*(")/,
-        `$1${{esc(film.t)}} (${{esc(film.y)}}) - ${{SITE_NAME}}"`
+        `$1${{pageTitle}}"`
       );
 
       html = html.replace(
         /(<meta name="twitter:description"[^>]*content=")[^"]*(")/,
-        `$1${{esc(film.s || '')}}"`
+        `$1${{shortDesc}}"`
       );
 
-      const filmSchemaJson = JSON.stringify({{
+      if (!html.includes('<meta name="robots"')) {{
+        html = html.replace('<meta name="description"', '<meta name="robots" content="index, follow">\n  <meta name="description"');
+      }}
+
+      // Structured Data: Movie & BreadcrumbList
+      const movieSchema = {{
         "@context": "https://schema.org",
         "@type": "Movie",
         "name": film.t,
         "dateCreated": film.y,
-        "director": {{"@type": "Person", "name": film.d}},
-        "actor": [{{"@type": "Person", "name": film.a}}],
-        "musicBy": {{"@type": "Person", "name": film.mu}},
+        "director": {{"@type": "Person", "name": film.d || "Unknown Director"}},
+        "actor": [{{"@type": "Person", "name": film.a || "Ensemble Cast"}}],
+        "musicBy": {{"@type": "Person", "name": film.mu || "Archive Score"}},
         "description": film.s,
         "genre": ["Spaghetti Western", "Euro-Western", "Cult Cinema", "Action"],
-        "url": `${{SITE_URL}}/?film=${{filmSlug}}`
-      }}, null, 2);
+        "url": filmUrl
+      }};
+
+      const breadcrumbSchema = {{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": `${{SITE_URL}}/`
+          }},
+          {{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Archive",
+            "item": `${{SITE_URL}}/archive`
+          }},
+          {{
+            "@type": "ListItem",
+            "position": 3,
+            "name": film.t,
+            "item": filmUrl
+          }}
+        ]
+      }};
+
+      const structuredDataJson = JSON.stringify(movieSchema, null, 2) + `\n  </script>\n  <script type="application/ld+json">\n  ` + JSON.stringify(breadcrumbSchema, null, 2);
 
       html = html.replace(
         /(<script type="application\\/ld\\+json" id="movie-schema">)[\\s\\S]*?(<\\/script>)/,
-        `$1\\n  ${{filmSchemaJson}}\\n  $2`
+        `$1\n  ${{structuredDataJson}}\n  $2`
       );
 
-      // SSR content block: visible immediately in HTTP response for Googlebot.
-      // JS hides this once the SPA has rendered the film card (avoids content flash for users).
-      const ssrBlock = `
-  <!-- SSR: Pre-rendered film content injected by Cloudflare Worker for Googlebot -->
-  <article id="ssr-film-card" itemscope itemtype="https://schema.org/Movie" style="max-width:860px;margin:2rem auto;padding:1.5rem 2rem;font-family:Georgia,serif;background:#1c1410;border:1px solid #5e3a28;border-radius:8px;color:#e8d5b0;">
-    <p style="font-size:0.75rem;letter-spacing:0.12em;color:#9e6b4a;margin-bottom:0.5rem;text-transform:uppercase;">Spaghetti Western Discovery — Vault Entry</p>
-    <h1 itemprop="name" style="font-size:1.8rem;color:#e8c97a;margin:0 0 0.25rem;">${{esc(film.t)}}</h1>
-    <p style="color:#9e6b4a;margin:0 0 1.2rem;font-size:1rem;">(${{esc(film.y)}}) &mdash; Spaghetti Western</p>
-    <dl style="display:grid;grid-template-columns:auto 1fr;gap:0.4rem 1rem;font-size:0.95rem;margin-bottom:1.2rem;">
-      <dt style="color:#9e6b4a;font-weight:700;">Director</dt>
-      <dd itemprop="director" itemscope itemtype="https://schema.org/Person" style="margin:0;color:#e8d5b0;"><span itemprop="name">${{esc(film.d)}}</span></dd>
-      <dt style="color:#9e6b4a;font-weight:700;">Starring</dt>
-      <dd itemprop="actor" itemscope itemtype="https://schema.org/Person" style="margin:0;color:#e8d5b0;"><span itemprop="name">${{esc(film.a)}}</span></dd>
-      <dt style="color:#9e6b4a;font-weight:700;">Music</dt>
-      <dd itemprop="musicBy" itemscope itemtype="https://schema.org/Person" style="margin:0;color:#e8d5b0;"><span itemprop="name">${{esc(film.mu)}}</span></dd>
-      <dt style="color:#9e6b4a;font-weight:700;">Genre</dt>
-      <dd style="margin:0;color:#e8d5b0;">Spaghetti Western / Euro-Western</dd>
-    </dl>
-    <p itemprop="description" style="color:#d4b896;line-height:1.7;font-size:0.97rem;">${{esc(film.s)}}</p>
-    <p style="margin-top:1.2rem;font-size:0.85rem;color:#7a5a3a;">
-      <a href="/" style="color:#c0392b;">&#8592; Return to the Discovery Engine</a>
-      &nbsp;&bull;&nbsp;
-      <a href="/archive.html" style="color:#c0392b;">Browse A&ndash;Z Archive</a>
-    </p>
-  </article>
-  <script>
-    (function() {{
-      function hideSSR() {{
-        var el = document.getElementById('ssr-film-card');
-        if (el) el.style.display = 'none';
-      }}
-      if (document.readyState === 'loading') {{
-        document.addEventListener('DOMContentLoaded', function() {{ setTimeout(hideSSR, 800); }});
-      }} else {{
-        setTimeout(hideSSR, 800);
-      }}
-    }})();
-  </script>`;
+      // Pre-populate actual DOM elements in #film-card (Eliminates empty placeholder shells & soft 404s)
+      const vaultNum = `VAULT ENTRY #${{String(film.id || '').padStart(3, '0')}}`;
+      html = html.replace(
+        /<span class="card-film-number" id="film-vault-number">[^<]*<\\/span>/,
+        `<span class="card-film-number" id="film-vault-number">${{vaultNum}}</span>`
+      );
 
-      html = html.replace("</body>", `${{ssrBlock}}\\n</body>`);
+      html = html.replace(
+        /<h3 class="film-title" id="film-title">[^<]*<\\/h3>/,
+        `<h3 class="film-title" id="film-title">${{esc(film.t)}}</h3>`
+      );
+
+      html = html.replace(
+        /<span class="film-year" id="film-year">[^<]*<\\/span>/,
+        `<span class="film-year" id="film-year">(${{esc(film.y)}})</span>`
+      );
+
+      if (film.alt) {{
+        html = html.replace(
+          /<div class="alt-titles-wrapper" id="alt-titles-box"[^>]*>/,
+          `<div class="alt-titles-wrapper" id="alt-titles-box" style="display:block;">`
+        );
+        html = html.replace(
+          /<p class="alt-titles-text" id="film-alt-titles">[^<]*<\\/p>/,
+          `<p class="alt-titles-text" id="film-alt-titles">${{esc(film.alt)}}</p>`
+        );
+      }} else {{
+        html = html.replace(
+          /<div class="alt-titles-wrapper" id="alt-titles-box"[^>]*>/,
+          `<div class="alt-titles-wrapper" id="alt-titles-box" style="display:none;">`
+        );
+      }}
+
+      html = html.replace(
+        /<div class="personnel-name" id="film-director">[^<]*<\\/div>/,
+        `<div class="personnel-name" id="film-director">${{esc(film.d || 'Unknown Director')}}</div>`
+      );
+
+      html = html.replace(
+        /<div class="personnel-name" id="film-star">[^<]*<\\/div>/,
+        `<div class="personnel-name" id="film-star">${{esc(film.a || 'Ensemble Cast')}}</div>`
+      );
+
+      html = html.replace(
+        /<div class="personnel-name" id="film-costars">[^<]*<\\/div>/,
+        `<div class="personnel-name" id="film-costars">${{esc(film.co || 'Various')}}</div>`
+      );
+
+      html = html.replace(
+        /<div class="personnel-name" id="film-music">[^<]*<\\/div>/,
+        `<div class="personnel-name" id="film-music">${{esc(film.mu || 'Archive Score')}}</div>`
+      );
+
+      html = html.replace(
+        /<p class="synopsis-content" id="film-synopsis">[\\s\\S]*?<\\/p>/,
+        `<p class="synopsis-content" id="film-synopsis">${{esc(film.s || 'No editorial synopsis currently available for this title.')}}</p>`
+      );
+
+      html = html.replace(
+        /<div class="ticker-content" id="ticker-text">[^<]*<\\/div>/,
+        `<div class="ticker-content" id="ticker-text">★ ${{esc(film.t.toUpperCase())}} (${{esc(film.y)}}) ★</div>`
+      );
 
       return new Response(html, {{
         status: 200,
@@ -639,6 +663,7 @@ export default {{
           "Content-Type": "text/html; charset=UTF-8",
           "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
           "X-Film-Slug": filmSlug,
+          "X-Robots-Tag": "index, follow",
           "Vary": "Accept-Encoding",
         }},
       }});

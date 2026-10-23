@@ -25,6 +25,24 @@
 /*.html
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
+/
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/archive
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/about
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/contact
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/privacy
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/terms
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
 # Images: immutable long cache
 /*.jpg
   Cache-Control: public, max-age=31536000, immutable
