@@ -545,7 +545,7 @@ export default {{
       );
 
       if (!html.includes('<meta name="robots"')) {{
-        html = html.replace('<meta name="description"', '<meta name="robots" content="index, follow">\n  <meta name="description"');
+        html = html.replace('<meta name="description"', '<meta name="robots" content="index, follow">\\n  <meta name="description"');
       }}
 
       // Structured Data: Movie & BreadcrumbList
