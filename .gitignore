@@ -4,3 +4,4 @@ __pycache__/
 Thumbs.db
 backups/
 verify_cache.json
+.wrangler/
