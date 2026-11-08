@@ -56,3 +56,8 @@
 # Audio: immutable long cache
 /*.mp3
   Cache-Control: public, max-age=31536000, immutable
+
+# IndexNow key verification file
+/98ebccc16ff84c2f8ec6a9411bb3d39d.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=86400
