@@ -328,7 +328,9 @@
       "@context": "https://schema.org",
       "@type": "Movie",
       "name": movie.title,
+      "image": "https://spaghetti-westerns.softcoverbooks.co.za/1.jpg",
       "dateCreated": movie.year,
+      "datePublished": movie.year,
       "director": {
         "@type": "Person",
         "name": movie.director || "Unknown Director"

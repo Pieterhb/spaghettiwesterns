@@ -75,7 +75,15 @@ export default {
 
     const filmSlug = url.searchParams.get("film");
 
-    // 2. SSR Pre-Rendering for ?film=slug requests on root
+    // 2. Edge cache lookup for SSR ?film=slug requests
+    const cache = typeof caches !== "undefined" ? caches.default : null;
+    const cacheKey = new Request(url.toString(), request);
+    if (cache && filmSlug && (url.pathname === "/" || url.pathname === "")) {
+      const cached = await cache.match(cacheKey);
+      if (cached) return cached;
+    }
+
+    // 3. SSR Pre-Rendering for ?film=slug requests on root
     if (filmSlug && (url.pathname === "/" || url.pathname === "")) {
       const film = FILM_LOOKUP[filmSlug];
 
@@ -145,13 +153,27 @@ export default {
       }
 
       // Structured Data: Movie & BreadcrumbList
+      const actorList = [];
+      if (film.a) actorList.push({"@type": "Person", "name": film.a});
+      if (film.co) {
+        film.co.split(",").forEach(c => {
+          const clean = c.replace(/\.\.\./g, "").trim();
+          if (clean && clean !== film.a) {
+            actorList.push({"@type": "Person", "name": clean});
+          }
+        });
+      }
+      if (actorList.length === 0) actorList.push({"@type": "Person", "name": "Ensemble Cast"});
+
       const movieSchema = {
         "@context": "https://schema.org",
         "@type": "Movie",
         "name": film.t,
+        "image": `${SITE_URL}/1.jpg`,
         "dateCreated": film.y,
+        "datePublished": film.y,
         "director": {"@type": "Person", "name": film.d || "Unknown Director"},
-        "actor": [{"@type": "Person", "name": film.a || "Ensemble Cast"}],
+        "actor": actorList,
         "musicBy": {"@type": "Person", "name": film.mu || "Archive Score"},
         "description": film.s,
         "genre": ["Spaghetti Western", "Euro-Western", "Cult Cinema", "Action"],
@@ -258,16 +280,22 @@ export default {
         `<div class="ticker-content" id="ticker-text">&#9733; ${esc(film.t.toUpperCase())} (${esc(film.y)}) &#9733;</div>`
       );
 
-      return new Response(html, {
+      const response = new Response(html, {
         status: 200,
         headers: {
           "Content-Type": "text/html; charset=UTF-8",
-          "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
+          "Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate=604800",
           "X-Film-Slug": filmSlug,
           "X-Robots-Tag": "index, follow",
           "Vary": "Accept-Encoding",
         },
       });
+
+      if (cache && ctx && ctx.waitUntil) {
+        ctx.waitUntil(cache.put(cacheKey, response.clone()));
+      }
+
+      return response;
     }
 
     return env.ASSETS.fetch(request);

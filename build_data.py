@@ -105,25 +105,7 @@ def generate_archive_html(movies: list, output_file: str = "archive.html"):
             music = html.escape(m['music'] or 'Archival')
             synopsis = html.escape(m['synopsis'][:170] + ('...' if len(m['synopsis']) > 170 else ''))
 
-            cards_html.append(f"""
-        <article class="archive-card">
-          <div class="archive-card-header">
-            <h3 class="archive-card-title">
-              <a href="/?film={slug}" class="archive-link" title="Discover {t} ({y})">
-                {t} <span class="archive-year">({y})</span>
-              </a>
-            </h3>
-          </div>
-          <div class="archive-card-meta">
-            <span class="meta-tag">🎬 <strong>Dir:</strong> {director}</span>
-            <span class="meta-tag">⭐ <strong>Star:</strong> {lead}</span>
-            <span class="meta-tag">🎵 <strong>Score:</strong> {music}</span>
-          </div>
-          <p class="archive-card-synopsis">{synopsis}</p>
-          <div class="archive-card-footer">
-            <a href="/?film={slug}" class="archive-view-btn">View Film Card →</a>
-          </div>
-        </article>""")
+            cards_html.append(f"""<article class="archive-card"><div class="archive-card-header"><h3 class="archive-card-title"><a href="/?film={slug}" class="archive-link" title="Discover {t} ({y})">{t} <span class="archive-year">({y})</span></a></h3></div><div class="archive-card-meta"><span class="meta-tag">🎬 <strong>Dir:</strong> {director}</span><span class="meta-tag">⭐ <strong>Star:</strong> {lead}</span><span class="meta-tag">🎵 <strong>Score:</strong> {music}</span></div><p class="archive-card-synopsis">{synopsis}</p><div class="archive-card-footer"><a href="/?film={slug}" class="archive-view-btn">View Film Card →</a></div></article>""")
 
         section_block = f"""
       <section class="archive-letter-section" id="{l}">
@@ -182,7 +164,11 @@ def generate_archive_html(movies: list, output_file: str = "archive.html"):
       "@type": "Thing",
       "name": "Spaghetti Western Cinema"
     }},
-    "numberOfItems": {len(movies)}
+    "mainEntity": {{
+      "@type": "ItemList",
+      "name": "Spaghetti Western Filmography (1961–1977)",
+      "numberOfItems": {len(movies)}
+    }}
   }}
   </script>
 </head>
@@ -371,11 +357,25 @@ def main():
     <priority>{prio}</priority>
   </url>""")
 
+    # Include all 560 indexable, canonical film detail URLs
+    for m in movies:
+        film_slug = m.get("slug")
+        if not film_slug:
+            continue
+        film_url = f"{SITE_URL}/?film={film_slug}"
+        sitemap_lines.append(f"""  <url>
+    <loc>{film_url}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>""")
+
     sitemap_lines.append("</urlset>\n")
 
+    total_sitemap_urls = len(canonical_pages) + len(movies)
     with open(sitemap_file, "w", encoding="utf-8") as f:
         f.write("\n".join(sitemap_lines))
-    print(f"Generated {sitemap_file} with {len(canonical_pages)} canonical 200 OK URLs.")
+    print(f"Generated {sitemap_file} with {total_sitemap_urls} canonical 200 OK URLs (including {len(movies)} film pages).")
 
     # Generate Cloudflare Pages _worker.js for edge SSR & soft-404 handling
     generate_worker_js(movies)
@@ -479,7 +479,15 @@ export default {{
 
     const filmSlug = url.searchParams.get("film");
 
-    // 2. SSR Pre-Rendering for ?film=slug requests on root
+    // 2. Edge cache lookup for SSR ?film=slug requests
+    const cache = typeof caches !== "undefined" ? caches.default : null;
+    const cacheKey = new Request(url.toString(), request);
+    if (cache && filmSlug && (url.pathname === "/" || url.pathname === "")) {{
+      const cached = await cache.match(cacheKey);
+      if (cached) return cached;
+    }}
+
+    // 3. SSR Pre-Rendering for ?film=slug requests on root
     if (filmSlug && (url.pathname === "/" || url.pathname === "")) {{
       const film = FILM_LOOKUP[filmSlug];
 
@@ -549,13 +557,27 @@ export default {{
       }}
 
       // Structured Data: Movie & BreadcrumbList
+      const actorList = [];
+      if (film.a) actorList.push({{"@type": "Person", "name": film.a}});
+      if (film.co) {{
+        film.co.split(",").forEach(c => {{
+          const clean = c.replace(/\\.\\.\\./g, "").trim();
+          if (clean && clean !== film.a) {{
+            actorList.push({{"@type": "Person", "name": clean}});
+          }}
+        }});
+      }}
+      if (actorList.length === 0) actorList.push({{"@type": "Person", "name": "Ensemble Cast"}});
+
       const movieSchema = {{
         "@context": "https://schema.org",
         "@type": "Movie",
         "name": film.t,
+        "image": `${{SITE_URL}}/1.jpg`,
         "dateCreated": film.y,
+        "datePublished": film.y,
         "director": {{"@type": "Person", "name": film.d || "Unknown Director"}},
-        "actor": [{{"@type": "Person", "name": film.a || "Ensemble Cast"}}],
+        "actor": actorList,
         "musicBy": {{"@type": "Person", "name": film.mu || "Archive Score"}},
         "description": film.s,
         "genre": ["Spaghetti Western", "Euro-Western", "Cult Cinema", "Action"],
@@ -657,16 +679,22 @@ export default {{
         `<div class="ticker-content" id="ticker-text">&#9733; ${{esc(film.t.toUpperCase())}} (${{esc(film.y)}}) &#9733;</div>`
       );
 
-      return new Response(html, {{
+      const response = new Response(html, {{
         status: 200,
         headers: {{
           "Content-Type": "text/html; charset=UTF-8",
-          "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
+          "Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate=604800",
           "X-Film-Slug": filmSlug,
           "X-Robots-Tag": "index, follow",
           "Vary": "Accept-Encoding",
         }},
       }});
+
+      if (cache && ctx && ctx.waitUntil) {{
+        ctx.waitUntil(cache.put(cacheKey, response.clone()));
+      }}
+
+      return response;
     }}
 
     return env.ASSETS.fetch(request);

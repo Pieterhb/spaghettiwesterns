@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-IndexNow URL Submission Script — Admin/Backend Use Only
+IndexNow URL Submission Script â€” Admin/Backend Use Only
 =======================================================
 Submits updated URLs to Bing IndexNow API via HTTP POST.
 
@@ -11,7 +11,7 @@ Usage:
     python tools/indexnow_submit.py
 
 Requirements:
-    pip install requests  (or use built-in urllib — no deps required by default)
+    pip install requests  (or use built-in urllib â€” no deps required by default)
 
 Docs: https://www.indexnow.org/documentation
 """
@@ -25,8 +25,10 @@ import sys
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-API_KEY = "98ebccc16ff84c2f8ec6a9411bb3d39d"
-KEY_LOCATION = "https://spaghetti-westerns.softcoverbooks.co.za/98ebccc16ff84c2f8ec6a9411bb3d39d.txt"
+# Master key verified in Bing Webmaster Tools for www.softcoverbooks.co.za.
+# Accepted for all softcoverbooks.co.za subdomains per IndexNow protocol.
+API_KEY = "e6b44d6766614ba9b455ea2a1eda494d"
+KEY_LOCATION = "https://spaghetti-westerns.softcoverbooks.co.za/e6b44d6766614ba9b455ea2a1eda494d.txt"
 HOST = "spaghetti-westerns.softcoverbooks.co.za"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/IndexNow"
 
@@ -66,7 +68,7 @@ def submit_indexnow() -> None:
         method="POST",
     )
 
-    print(f"Submitting {len(URLS_TO_SUBMIT)} URLs to IndexNow …")
+    print(f"Submitting {len(URLS_TO_SUBMIT)} URLs to IndexNow â€¦")
     print(f"  Endpoint : {INDEXNOW_ENDPOINT}")
     print(f"  Host     : {HOST}")
     print(f"  Key      : {API_KEY}")
@@ -91,29 +93,29 @@ def submit_indexnow() -> None:
 
     # IndexNow returns 200 or 202 on success
     if status in (200, 202):
-        print("\n✅  URLs successfully submitted to Bing IndexNow.")
+        print("\n[OK]  URLs successfully submitted to Bing IndexNow.")
     elif status == 400:
-        print("\n❌  Bad request — check that all URLs belong to the declared host.", file=sys.stderr)
+        print("\n[ERR] Bad request -- check that all URLs belong to the declared host.", file=sys.stderr)
         sys.exit(1)
     elif status == 403:
         print(
-            "\n❌  Forbidden — Bing could not verify the key file.\n"
-            "   Make sure https://spaghetti-westerns.softcoverbooks.co.za/98ebccc16ff84c2f8ec6a9411bb3d39d.txt\n"
-            "   returns HTTP 200 with the raw key as its body.\n"
-            "   Also consider placing the key file on www.softcoverbooks.co.za for parent-domain verification.",
+            "\n[ERR] Forbidden -- Bing could not verify the key file.\n"
+            "   Make sure https://www.softcoverbooks.co.za/e6b44d6766614ba9b455ea2a1eda494d.txt\n"
+            "   returns HTTP 200 with the raw key as its body.",
             file=sys.stderr,
         )
         sys.exit(1)
     elif status == 422:
-        print("\n❌  Unprocessable entity — one or more URLs are invalid.", file=sys.stderr)
+        print("\nâŒ  Unprocessable entity â€” one or more URLs are invalid.", file=sys.stderr)
         sys.exit(1)
     elif status == 429:
-        print("\n⚠️   Too many requests — you have been rate-limited. Try again later.", file=sys.stderr)
+        print("\nâš ï¸   Too many requests â€” you have been rate-limited. Try again later.", file=sys.stderr)
         sys.exit(1)
     else:
-        print(f"\n⚠️   Unexpected status {status}.", file=sys.stderr)
+        print(f"\nâš ï¸   Unexpected status {status}.", file=sys.stderr)
         sys.exit(1)
 
 
 if __name__ == "__main__":
     submit_indexnow()
+
