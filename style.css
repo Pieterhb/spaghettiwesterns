@@ -1467,36 +1467,95 @@ body {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN (MOBILE OPTIMIZATIONS)
+   RESPONSIVE DESIGN (MOBILE OPTIMIZATIONS — CELLPHONE 9:16 SCREENS ONLY)
    ========================================================================== */
 @media (max-width: 680px) {
+  body {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
   .site-header {
     padding: 1.3rem 1rem 1.1rem;
   }
 
   .site-title .title-main {
     font-size: 1.9rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 
-  /* Point nr 3: Snug spacing between ticker HUD and Surprise Me button */
+  /* Bug 1 Fix: Slot machine ticker text multi-line, smaller font, and hyphenation */
   .slot-machine-hud {
     margin: 0 auto 0.4rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .hud-ticker-window {
+    height: auto;
+    min-height: 2.4rem;
+    padding: 0.2rem 0.3rem;
+  }
+
+  .ticker-content {
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 
   /* Centerpiece button stage */
   .button-stage {
     margin: 0.4rem 0 0.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
+  /* Bug 4 Fix: Main button padding, subtext sizing/wrapping and glow containment */
   .btn-surprise-me {
-    padding: 1rem 2rem;
-    min-width: 260px;
+    padding: 0.85rem 1rem;
+    min-width: 0;
     width: 100%;
     max-width: 320px;
+    overflow: hidden;
+  }
+
+  .btn-inner {
+    gap: 0.5rem;
+  }
+
+  .btn-icon {
+    font-size: 1.5rem;
+  }
+
+  .btn-glow {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   .btn-text {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
+  }
+
+  .btn-subtext {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    white-space: normal;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 
   /* Point nr 4: Snug spacing between Surprise Me button and filter section */
@@ -1508,13 +1567,56 @@ body {
     margin-bottom: 0.5rem;
   }
 
+  .filter-pill {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
   .western-card {
-    padding: 1.5rem 1.2rem;
+    padding: 1.5rem 1.1rem;
+  }
+
+  /* Card header bar wrap & text scaling */
+  .card-header-bar {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .card-tag {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+  }
+
+  .card-film-number {
+    font-size: 0.72rem;
+  }
+
+  /* Bug 2 Fix: Film title scaling, word-breaking & hyphenation */
+  .film-title {
+    font-size: clamp(1.4rem, 6vw, 1.85rem);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    line-height: 1.2;
+  }
+
+  .alt-titles-text {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 
   .personnel-grid {
     grid-template-columns: 1fr;
     gap: 0.6rem;
+  }
+
+  .personnel-name {
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .card-actions {
@@ -1523,12 +1625,32 @@ body {
 
   .btn-card-action {
     width: 100%;
+    white-space: normal;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   /* Point nr 2: Snug spacing between FAQ container and FlickFinder banner */
   .editorial-faq-section {
     padding: 1.2rem 1.1rem 0.9rem;
     margin-top: 1.2rem;
+  }
+
+  /* Bug 6 Fix: Editorial archive CTA button full width, smaller font & wrapping */
+  .editorial-archive-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 0.85rem 1rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+    line-height: 1.4;
+    white-space: normal;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 
   .faq-container {
@@ -1548,6 +1670,99 @@ body {
     width: 100%;
     padding: 0.9rem 1.2rem;
     font-size: 0.85rem;
+    white-space: normal;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  /* Bug 5 Fix: Toast notification full width safe bounds & hyphenation */
+  .toast-notification {
+    width: calc(100% - 2rem);
+    max-width: 360px;
+    left: 50%;
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+  }
+
+  .toast-message {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    text-align: center;
+  }
+
+  /* Archive Page mobile optimizations */
+  .archive-card-title {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  /* Bug 3 Fix: Policy/Legal pages responsive layout & URL breaking */
+  .policy-container {
+    padding: 1.25rem 1rem !important;
+    margin: 1.25rem auto !important;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .policy-title {
+    font-size: 1.7rem !important;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .policy-container h2 {
+    font-size: 1.15rem !important;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .policy-container p,
+  .policy-container li,
+  .policy-container a,
+  .policy-container code {
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .contact-card {
+    padding: 1rem 0.85rem !important;
+  }
+
+  .contact-item {
+    font-size: 0.95rem !important;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .contact-card a {
+    overflow-wrap: anywhere !important;
+    word-break: break-all !important;
+  }
+
+  .back-btn,
+  .policy-container .back-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 0.82rem !important;
+    padding: 0.6rem 0.8rem !important;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 }
 

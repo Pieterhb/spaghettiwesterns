@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Lora:ital,wght@0,400;0,600;1,400&family=Rye&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2.2">
+  <link rel="stylesheet" href="style.css?v=2.3">
   <style>
     .policy-container {
       max-width: 800px;
@@ -130,6 +130,49 @@
       background: #2b1f1b;
       color: #fff !important;
       transform: translateY(-2px);
+    }
+
+    @media (max-width: 680px) {
+      .policy-container {
+        padding: 1.25rem 1rem;
+        margin: 1.25rem auto;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+      }
+      .policy-title {
+        font-size: 1.7rem;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+      }
+      .policy-container h2 {
+        font-size: 1.15rem;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+      .policy-container p,
+      .policy-container li,
+      .policy-container a,
+      .policy-container code {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+      }
+      .back-btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.82rem;
+        padding: 0.6rem 0.8rem;
+        white-space: normal;
+        overflow-wrap: break-word;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+      }
     }
   </style>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
